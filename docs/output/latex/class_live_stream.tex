@@ -1,0 +1,302 @@
+\hypertarget{class_live_stream}{}\doxysection{Live\+Stream Class Reference}
+\label{class_live_stream}\index{LiveStream@{LiveStream}}
+Inheritance diagram for Live\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_live_stream}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_live_stream_a309b9fa13f3a3bcf7c2112859b82827f}{Live\+Stream}} (std\+::string \mbox{\hyperlink{class_stream_a740de4c2b13297152661213397ae2b54}{title}}, language \mbox{\hyperlink{class_stream_a3b877e58d52f752102a2fa5068c95dd5}{stream\+Language}}, genre \mbox{\hyperlink{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}{stream\+Genre}}, std\+::string \mbox{\hyperlink{class_stream_ad6504504b2d424b842bc018f9fc04dd4}{streamer\+Nick}}, unsigned \mbox{\hyperlink{class_live_stream_a73f826a757b582ff2fe3f549da076f77}{min\+Age}}=V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE)
+\item 
+virtual void \mbox{\hyperlink{class_live_stream_ad3d49a01baefcd6a5ca9dba6f31a733b}{add\+Viewer}} (const std\+::string \&viewer\+Nick)=0
+\item 
+void \mbox{\hyperlink{class_live_stream_ab6ffbe2bc058ae7d2ca0aa142b192ded}{remove\+Viewer}} (const std\+::string \&viewer\+Nick)
+\item 
+unsigned int \mbox{\hyperlink{class_live_stream_aaa02f7d8667de67b84a8e88b8c5254fe}{get\+Num\+Viewers}} () const
+\item 
+unsigned \mbox{\hyperlink{class_live_stream_a74c37fcdbf429f9629b2373a2f6ea42c}{get\+Min\+Age}} () const
+\item 
+stream\+Type \mbox{\hyperlink{class_live_stream_a63e5b987c8de5d5ebdc826dbaf2e8b1a}{get\+Stream\+Type}} () const =0
+\item 
+stream\+State \mbox{\hyperlink{class_live_stream_a8f0a34c104a21c2a6bb534bbef48ed4d}{get\+Stream\+State}} () const final
+\item 
+unsigned \mbox{\hyperlink{class_live_stream_aba1fe80d47d0b60bb377661676459b52}{close\+Stream}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_live_stream_a4ecb05adeb854855ce8fd73e9d2de3fb}{get\+Likes}} () const
+\item 
+unsigned int \mbox{\hyperlink{class_live_stream_a4aeaed0794a6292f2ba35d13a5b86db3}{get\+Dislikes}} () const
+\item 
+void \mbox{\hyperlink{class_live_stream_a31815e7597711cf0d4c87d9d1a5616ee}{give\+Like}} (const std\+::string \&viewer\+Nick)
+\item 
+void \mbox{\hyperlink{class_live_stream_a8cc0b0c212159719f7b38447c9e34ecd}{give\+Dislike}} (const std\+::string \&viewer\+Nick)
+\item 
+void \mbox{\hyperlink{class_live_stream_ad24b7f0ec8952c7b42e41ff32b9d6df1}{remove\+Feed\+Back}} (const std\+::string \&viewer\+Nick)
+\item 
+bool \mbox{\hyperlink{class_live_stream_a3234e3000b656229a79dbdbef1a02139}{operator$<$}} (\mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$comp\+Stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_live_stream_a726473df8e63f854a3d436b3707b582f}\label{class_live_stream_a726473df8e63f854a3d436b3707b582f}} 
+static ID \mbox{\hyperlink{class_live_stream_a726473df8e63f854a3d436b3707b582f}{last\+Id}} = N\+U\+L\+L\+\_\+\+S\+T\+R\+E\+AM
+\begin{DoxyCompactList}\small\item\em Static variable that stores the last id of the streamer ( Not allowing repeated id\textquotesingle{}s )f. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_live_stream_a6131ff59c0bafd46534654c8537e582f}{write\+To\+File}} (std\+::ofstream \&ff)=0
+\item 
+virtual void \mbox{\hyperlink{class_live_stream_a5b1f3625fd4d5aa010b786bad496e4ef}{read\+From\+File}} (std\+::ifstream \&ff)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_live_stream_a73f826a757b582ff2fe3f549da076f77}\label{class_live_stream_a73f826a757b582ff2fe3f549da076f77}} 
+unsigned \mbox{\hyperlink{class_live_stream_a73f826a757b582ff2fe3f549da076f77}{min\+Age}}
+\begin{DoxyCompactList}\small\item\em Necessary age to se the streamer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_live_stream_a0f9dfc6258fa1ace7b07ab6babe7e573}\label{class_live_stream_a0f9dfc6258fa1ace7b07ab6babe7e573}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_live_stream_a0f9dfc6258fa1ace7b07ab6babe7e573}{stream\+Viewers}}
+\begin{DoxyCompactList}\small\item\em Vector with nicks of viewers of the streamer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_live_stream_a74d371262643605f002c01233cf67aed}\label{class_live_stream_a74d371262643605f002c01233cf67aed}} 
+std\+::map$<$ std\+::string, feedback $>$ \mbox{\hyperlink{class_live_stream_a74d371262643605f002c01233cf67aed}{like\+System}}
+\begin{DoxyCompactList}\small\item\em Map with all the feedback of viewers that react to the streamer key = user\+Nick, value = given\+Feedback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_live_stream_a3bfa18a74f326eae7868ea678a42821e}\label{class_live_stream_a3bfa18a74f326eae7868ea678a42821e}} 
+std\+::pair$<$ unsigned, unsigned $>$ \mbox{\hyperlink{class_live_stream_a3bfa18a74f326eae7868ea678a42821e}{n\+Likes\+\_\+\+Dislikes}}
+\begin{DoxyCompactList}\small\item\em Number of like and dislikes of the streamer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_live_stream_a309b9fa13f3a3bcf7c2112859b82827f}\label{class_live_stream_a309b9fa13f3a3bcf7c2112859b82827f}} 
+\index{LiveStream@{LiveStream}!LiveStream@{LiveStream}}
+\index{LiveStream@{LiveStream}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{LiveStream()}{LiveStream()}}
+{\footnotesize\ttfamily Live\+Stream\+::\+Live\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{language}]{stream\+Language,  }\item[{genre}]{stream\+Genre,  }\item[{std\+::string}]{streamer\+Nick,  }\item[{unsigned}]{min\+Age = {\ttfamily VIEWER\+\_\+MIN\+\_\+AGE} }\end{DoxyParamCaption})}
+
+Constructor of a \mbox{\hyperlink{class_live_stream}{Live\+Stream}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ title of the streamer \\
+\hline
+{\em language} & -\/ language of the streamer \\
+\hline
+{\em genre} & -\/ genre of the streamer \\
+\hline
+{\em min\+Age} & -\/ min age of the streamer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_live_stream_ad3d49a01baefcd6a5ca9dba6f31a733b}\label{class_live_stream_ad3d49a01baefcd6a5ca9dba6f31a733b}} 
+\index{LiveStream@{LiveStream}!addViewer@{addViewer}}
+\index{addViewer@{addViewer}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{addViewer()}{addViewer()}}
+{\footnotesize\ttfamily virtual void Live\+Stream\+::add\+Viewer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add viewers to the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a8bd845ca0d9bc0d01b9b27418b4afeca}{Public\+Stream}}, and \mbox{\hyperlink{class_private_stream_ab4197d2c3b7b073a0560af640c6a3050}{Private\+Stream}}.
+
+\mbox{\Hypertarget{class_live_stream_aba1fe80d47d0b60bb377661676459b52}\label{class_live_stream_aba1fe80d47d0b60bb377661676459b52}} 
+\index{LiveStream@{LiveStream}!closeStream@{closeStream}}
+\index{closeStream@{closeStream}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{closeStream()}{closeStream()}}
+{\footnotesize\ttfamily unsigned int Live\+Stream\+::close\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function used to end streamer
+
+\begin{DoxyReturn}{Returns}
+-\/ corrent number of viewers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_live_stream_a4aeaed0794a6292f2ba35d13a5b86db3}\label{class_live_stream_a4aeaed0794a6292f2ba35d13a5b86db3}} 
+\index{LiveStream@{LiveStream}!getDislikes@{getDislikes}}
+\index{getDislikes@{getDislikes}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getDislikes()}{getDislikes()}}
+{\footnotesize\ttfamily unsigned int Live\+Stream\+::get\+Dislikes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ give number of dislikes of the streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_live_stream_a4ecb05adeb854855ce8fd73e9d2de3fb}\label{class_live_stream_a4ecb05adeb854855ce8fd73e9d2de3fb}} 
+\index{LiveStream@{LiveStream}!getLikes@{getLikes}}
+\index{getLikes@{getLikes}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getLikes()}{getLikes()}}
+{\footnotesize\ttfamily unsigned int Live\+Stream\+::get\+Likes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ number of likes of the streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_live_stream_a74c37fcdbf429f9629b2373a2f6ea42c}\label{class_live_stream_a74c37fcdbf429f9629b2373a2f6ea42c}} 
+\index{LiveStream@{LiveStream}!getMinAge@{getMinAge}}
+\index{getMinAge@{getMinAge}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getMinAge()}{getMinAge()}}
+{\footnotesize\ttfamily unsigned int Live\+Stream\+::get\+Min\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{class_stream}{Stream}} min age 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_live_stream_aaa02f7d8667de67b84a8e88b8c5254fe}\label{class_live_stream_aaa02f7d8667de67b84a8e88b8c5254fe}} 
+\index{LiveStream@{LiveStream}!getNumViewers@{getNumViewers}}
+\index{getNumViewers@{getNumViewers}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getNumViewers()}{getNumViewers()}}
+{\footnotesize\ttfamily unsigned int Live\+Stream\+::get\+Num\+Viewers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ number of viewers in the streamer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a5422b303a23a7c27521a24c3797e1867}{Stream}}.
+
+\mbox{\Hypertarget{class_live_stream_a8f0a34c104a21c2a6bb534bbef48ed4d}\label{class_live_stream_a8f0a34c104a21c2a6bb534bbef48ed4d}} 
+\index{LiveStream@{LiveStream}!getStreamState@{getStreamState}}
+\index{getStreamState@{getStreamState}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getStreamState()}{getStreamState()}}
+{\footnotesize\ttfamily stream\+State Live\+Stream\+::get\+Stream\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ State of the stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_af11010ae2c995cdbaf1a3dd5be827ce3}{Stream}}.
+
+\mbox{\Hypertarget{class_live_stream_a63e5b987c8de5d5ebdc826dbaf2e8b1a}\label{class_live_stream_a63e5b987c8de5d5ebdc826dbaf2e8b1a}} 
+\index{LiveStream@{LiveStream}!getStreamType@{getStreamType}}
+\index{getStreamType@{getStreamType}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{getStreamType()}{getStreamType()}}
+{\footnotesize\ttfamily stream\+Type Live\+Stream\+::get\+Stream\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ return type of the streamer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a8ccf7198447019f39c67fa625bcaa415}{Stream}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a134a285d4577041177923f9e78971871}{Public\+Stream}}, and \mbox{\hyperlink{class_private_stream_a7d2b9af792d04711c3594571aa69e634}{Private\+Stream}}.
+
+\mbox{\Hypertarget{class_live_stream_a8cc0b0c212159719f7b38447c9e34ecd}\label{class_live_stream_a8cc0b0c212159719f7b38447c9e34ecd}} 
+\index{LiveStream@{LiveStream}!giveDislike@{giveDislike}}
+\index{giveDislike@{giveDislike}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{giveDislike()}{giveDislike()}}
+{\footnotesize\ttfamily void Live\+Stream\+::give\+Dislike (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})}
+
+add dislike to the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_live_stream_a31815e7597711cf0d4c87d9d1a5616ee}\label{class_live_stream_a31815e7597711cf0d4c87d9d1a5616ee}} 
+\index{LiveStream@{LiveStream}!giveLike@{giveLike}}
+\index{giveLike@{giveLike}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{giveLike()}{giveLike()}}
+{\footnotesize\ttfamily void Live\+Stream\+::give\+Like (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})}
+
+add like to the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_live_stream_a3234e3000b656229a79dbdbef1a02139}\label{class_live_stream_a3234e3000b656229a79dbdbef1a02139}} 
+\index{LiveStream@{LiveStream}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Live\+Stream\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$}]{comp\+Stream }\end{DoxyParamCaption})}
+
+Compare streamer with there min\+Age
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp\+Stream} & -\/ streamer to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ streamer that is being compared 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_live_stream_a5b1f3625fd4d5aa010b786bad496e4ef}\label{class_live_stream_a5b1f3625fd4d5aa010b786bad496e4ef}} 
+\index{LiveStream@{LiveStream}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily virtual void Live\+Stream\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Function to read a \mbox{\hyperlink{class_user}{User}} from the files 
+\begin{DoxyParams}{Parameters}
+{\em ifstream} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stream_a06292e0b2ea0c774e6f5f4509660c5ae}{Stream}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a6a86e0f53f1c71e176f75225afff5c43}{Public\+Stream}}, and \mbox{\hyperlink{class_private_stream_a9dd860cee060fb87d5178a35039cb6d7}{Private\+Stream}}.
+
+\mbox{\Hypertarget{class_live_stream_ad24b7f0ec8952c7b42e41ff32b9d6df1}\label{class_live_stream_ad24b7f0ec8952c7b42e41ff32b9d6df1}} 
+\index{LiveStream@{LiveStream}!removeFeedBack@{removeFeedBack}}
+\index{removeFeedBack@{removeFeedBack}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{removeFeedBack()}{removeFeedBack()}}
+{\footnotesize\ttfamily void Live\+Stream\+::remove\+Feed\+Back (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})}
+
+remove feedback from the streamer either like or dislike
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_live_stream_ab6ffbe2bc058ae7d2ca0aa142b192ded}\label{class_live_stream_ab6ffbe2bc058ae7d2ca0aa142b192ded}} 
+\index{LiveStream@{LiveStream}!removeViewer@{removeViewer}}
+\index{removeViewer@{removeViewer}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{removeViewer()}{removeViewer()}}
+{\footnotesize\ttfamily void Live\+Stream\+::remove\+Viewer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})}
+
+Remove viewer from the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_live_stream_a6131ff59c0bafd46534654c8537e582f}\label{class_live_stream_a6131ff59c0bafd46534654c8537e582f}} 
+\index{LiveStream@{LiveStream}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!LiveStream@{LiveStream}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily virtual void Live\+Stream\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Function to write a \mbox{\hyperlink{class_user}{User}} to the files 
+\begin{DoxyParams}{Parameters}
+{\em ofstream} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stream_a18aaa872f14c92b7663e4d6119997f64}{Stream}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a4cb754c31a0338cba5bec0ea548a8ab1}{Public\+Stream}}, and \mbox{\hyperlink{class_private_stream_ab70606a27c10162bf479dc8bc874bc2c}{Private\+Stream}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Live\+Stream.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Live\+Stream.\+cpp\end{DoxyCompactItemize}

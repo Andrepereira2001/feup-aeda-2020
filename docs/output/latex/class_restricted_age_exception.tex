@@ -1,0 +1,79 @@
+\hypertarget{class_restricted_age_exception}{}\doxysection{Restricted\+Age\+Exception Class Reference}
+\label{class_restricted_age_exception}\index{RestrictedAgeException@{RestrictedAgeException}}
+
+
+{\ttfamily \#include $<$Restricted\+Age\+Exception.\+h$>$}
+
+Inheritance diagram for Restricted\+Age\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_restricted_age_exception}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_restricted_age_exception_a2b10851d1333a27f08ef56a26ca1aee6}\label{class_restricted_age_exception_a2b10851d1333a27f08ef56a26ca1aee6}} 
+{\bfseries Restricted\+Age\+Exception} (std\+::string name, int age, int min\+Age)
+\item 
+const char $\ast$ \mbox{\hyperlink{class_restricted_age_exception_af19502076961d3d8235afc169ab27b65}{what}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_restricted_age_exception_a330e47126657eb19a685a2fbba0be6e4}\label{class_restricted_age_exception_a330e47126657eb19a685a2fbba0be6e4}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_restricted_age_exception_a65185a1d6a776149be3d56ef781badbd}\label{class_restricted_age_exception_a65185a1d6a776149be3d56ef781badbd}} 
+int {\bfseries age}
+\item 
+\mbox{\Hypertarget{class_restricted_age_exception_a22944b561b85ed6aca2e10133e3f46ca}\label{class_restricted_age_exception_a22944b561b85ed6aca2e10133e3f46ca}} 
+int {\bfseries min\+Age}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_restricted_age_exception_a53f2e8c4cecf10b38592ad0f8ea9f076}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_restricted_age_exception}{Restricted\+Age\+Exception}} \&exception)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception to be thrown when someone tries to register underage user 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_restricted_age_exception_af19502076961d3d8235afc169ab27b65}\label{class_restricted_age_exception_af19502076961d3d8235afc169ab27b65}} 
+\index{RestrictedAgeException@{RestrictedAgeException}!what@{what}}
+\index{what@{what}!RestrictedAgeException@{RestrictedAgeException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Restricted\+Age\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Brief info about exception \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_restricted_age_exception_a53f2e8c4cecf10b38592ad0f8ea9f076}\label{class_restricted_age_exception_a53f2e8c4cecf10b38592ad0f8ea9f076}} 
+\index{RestrictedAgeException@{RestrictedAgeException}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RestrictedAgeException@{RestrictedAgeException}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_restricted_age_exception}{Restricted\+Age\+Exception}} \&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Outputs a detailed explanation to the user on why the exception was thrown
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ Output streamer \\
+\hline
+{\em exception} & -\/ The exception thrown \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output streamer reference 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/users/Restricted\+Age\+Exception.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/users/Restricted\+Age\+Exception.\+cpp\end{DoxyCompactItemize}

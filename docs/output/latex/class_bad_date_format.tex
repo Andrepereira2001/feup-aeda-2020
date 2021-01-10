@@ -1,0 +1,73 @@
+\hypertarget{class_bad_date_format}{}\doxysection{Bad\+Date\+Format Class Reference}
+\label{class_bad_date_format}\index{BadDateFormat@{BadDateFormat}}
+
+
+{\ttfamily \#include $<$Bad\+Date\+Format.\+h$>$}
+
+Inheritance diagram for Bad\+Date\+Format\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bad_date_format}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bad_date_format_acf18dbb0af2f289d0d7b81f9eb6dff92}\label{class_bad_date_format_acf18dbb0af2f289d0d7b81f9eb6dff92}} 
+{\bfseries Bad\+Date\+Format} (const std\+::string \&date)
+\item 
+const char $\ast$ \mbox{\hyperlink{class_bad_date_format_a35666f8532f854ccffa0e722c4217f3b}{what}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bad_date_format_a7e3d49d85ea80746a9203e81b7c19414}\label{class_bad_date_format_a7e3d49d85ea80746a9203e81b7c19414}} 
+std\+::string {\bfseries date}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_bad_date_format_afa839c0a0b66a95bb738c7a4489e002d}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_bad_date_format}{Bad\+Date\+Format}} \&exception)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception to be thrown when using a bad time format while trying to create a date class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bad_date_format_a35666f8532f854ccffa0e722c4217f3b}\label{class_bad_date_format_a35666f8532f854ccffa0e722c4217f3b}} 
+\index{BadDateFormat@{BadDateFormat}!what@{what}}
+\index{what@{what}!BadDateFormat@{BadDateFormat}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Bad\+Date\+Format\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Brief info about exception \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_bad_date_format_afa839c0a0b66a95bb738c7a4489e002d}\label{class_bad_date_format_afa839c0a0b66a95bb738c7a4489e002d}} 
+\index{BadDateFormat@{BadDateFormat}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BadDateFormat@{BadDateFormat}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_bad_date_format}{Bad\+Date\+Format}} \&}]{exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Outputs a detailed explanation to the user on why the exception was thrown
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ Output streamer \\
+\hline
+{\em exception} & -\/ The exception thrown \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output streamer reference 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/date/Bad\+Date\+Format.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/date/Bad\+Date\+Format.\+cpp\end{DoxyCompactItemize}

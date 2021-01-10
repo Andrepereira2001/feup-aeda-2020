@@ -1,0 +1,76 @@
+\hypertarget{class_user_manager}{}\doxysection{User\+Manager Class Reference}
+\label{class_user_manager}\index{UserManager@{UserManager}}
+
+
+{\ttfamily \#include $<$User\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_manager_a2646e1670dd9d6a4a93bc98c41dfe5bf}{User\+Manager}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_user_manager_ada45b9cf672585a6fa556613da7757cb}{create\+Viewer}} (const std\+::string \&name, std\+::string nick\+Name, const std\+::string \&password, const \mbox{\hyperlink{class_date}{Date}} \&birth\+Date) const
+\item 
+\mbox{\Hypertarget{class_user_manager_a0b0d4e36f85153fa7db924e62a5fd2c4}\label{class_user_manager_a0b0d4e36f85153fa7db924e62a5fd2c4}} 
+void \mbox{\hyperlink{class_user_manager_a0b0d4e36f85153fa7db924e62a5fd2c4}{create\+Streamer}} (std\+::string name, std\+::string nick\+Name, const std\+::string \&password, const \mbox{\hyperlink{class_date}{Date}} \&birth\+Date) const
+\begin{DoxyCompactList}\small\item\em Creates a streamer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_manager_adfce7413cbb7f1dfcdf1c0cb25700136}\label{class_user_manager_adfce7413cbb7f1dfcdf1c0cb25700136}} 
+void \mbox{\hyperlink{class_user_manager_adfce7413cbb7f1dfcdf1c0cb25700136}{create\+Admin}} (std\+::string name, std\+::string nick\+Name, const std\+::string \&password, const \mbox{\hyperlink{class_date}{Date}} \&birth\+Date) const
+\begin{DoxyCompactList}\small\item\em Creates an admin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_manager_a078687f5ad5dd06d6258d1ef2b6f7ae2}\label{class_user_manager_a078687f5ad5dd06d6258d1ef2b6f7ae2}} 
+void \mbox{\hyperlink{class_user_manager_a078687f5ad5dd06d6258d1ef2b6f7ae2}{remove\+User}} (std\+::string nick\+Name) const
+\begin{DoxyCompactList}\small\item\em Removes a user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_manager_a1ed04fb841a2ed5b161029d8bd00485d}{remove\+History\+Elem\+From\+User}} (ID id) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_manager_ab809b9bd9d8d6215f24ed486babbe12a}\label{class_user_manager_ab809b9bd9d8d6215f24ed486babbe12a}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to manage users, like creating and removing viewers 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_manager_a2646e1670dd9d6a4a93bc98c41dfe5bf}\label{class_user_manager_a2646e1670dd9d6a4a93bc98c41dfe5bf}} 
+\index{UserManager@{UserManager}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{UserManager()}{UserManager()}}
+{\footnotesize\ttfamily User\+Manager\+::\+User\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\hyperlink{class_stream_z}{StreamZ}} needs to be used by the class to access the database and other methods 
+\begin{DoxyParams}{Parameters}
+{\em streamZ} & -\/ Main class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_manager_ada45b9cf672585a6fa556613da7757cb}\label{class_user_manager_ada45b9cf672585a6fa556613da7757cb}} 
+\index{UserManager@{UserManager}!createViewer@{createViewer}}
+\index{createViewer@{createViewer}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{createViewer()}{createViewer()}}
+{\footnotesize\ttfamily void User\+Manager\+::create\+Viewer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{std\+::string}]{nick\+Name,  }\item[{const std\+::string \&}]{password,  }\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{birth\+Date }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+If an admin is already registered Creates a viewer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_manager_a1ed04fb841a2ed5b161029d8bd00485d}\label{class_user_manager_a1ed04fb841a2ed5b161029d8bd00485d}} 
+\index{UserManager@{UserManager}!removeHistoryElemFromUser@{removeHistoryElemFromUser}}
+\index{removeHistoryElemFromUser@{removeHistoryElemFromUser}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{removeHistoryElemFromUser()}{removeHistoryElemFromUser()}}
+{\footnotesize\ttfamily void User\+Manager\+::remove\+History\+Elem\+From\+User (\begin{DoxyParamCaption}\item[{ID}]{id }\end{DoxyParamCaption}) const}
+
+Removes users the access of a finished streamer Used when deleting a finished streamer 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/User\+Manager.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/User\+Manager.\+cpp\end{DoxyCompactItemize}

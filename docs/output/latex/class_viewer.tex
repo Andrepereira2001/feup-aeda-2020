@@ -1,0 +1,404 @@
+\hypertarget{class_viewer}{}\doxysection{Viewer Class Reference}
+\label{class_viewer}\index{Viewer@{Viewer}}
+
+
+{\ttfamily \#include $<$Viewer.\+h$>$}
+
+Inheritance diagram for Viewer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_viewer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_viewer_a746a977192d8bfd3d321618bd8eac02a}{Viewer}} (std\+::string \mbox{\hyperlink{class_user_a085d8d69282b6298964eab8351584536}{name}}, std\+::string \mbox{\hyperlink{class_user_a32d81f3ba0a1831f3b91bd0703ede174}{nick\+Name}}, std\+::string \mbox{\hyperlink{class_user_ac2f2e75b15e8eb6cbb030fc85a6cd59f}{password}}, const \mbox{\hyperlink{class_date}{Date}} \&birth\+Date)
+\item 
+user\+Type \mbox{\hyperlink{class_viewer_a665c1c55293581210f618323c137f560}{get\+User\+Type}} () const override
+\item 
+ID \mbox{\hyperlink{class_viewer_a11b39d3ed6d03eda01227fd31cc05666}{get\+Curr\+Watching}} () const
+\item 
+bool \mbox{\hyperlink{class_viewer_ad7b314efbe2fed24b6b6ba7aada7cf70}{watching}} () const
+\item 
+void \mbox{\hyperlink{class_viewer_ad710eeef4c7d086e545305df3e826d6c}{follow\+Streamer}} (const std\+::string \&streamer)
+\item 
+void \mbox{\hyperlink{class_viewer_a88966fe692a7715180f2dce994d7e067}{un\+Follow\+Streamer}} (const std\+::string \&streamer)
+\item 
+bool \mbox{\hyperlink{class_viewer_a66e93241725a881a364b44f45027f302}{is\+Following}} (std\+::string \&streamer)
+\item 
+void \mbox{\hyperlink{class_viewer_add3b5222510b7830e49317e5c93642ea}{join\+Stream}} (ID stream\+ID)
+\item 
+void \mbox{\hyperlink{class_viewer_a1bcb6d912b95fe17dca5d6c0b811ffe7}{leave\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_a00a2bd77589625f467a647fd54b185e2}{kicked\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_a10090e3617c3fc8694cb575021dd5bbe}{add\+Stream\+History}} (ID stream\+ID)
+\item 
+void \mbox{\hyperlink{class_viewer_a1b3c4e1c10cbbf716e4c209c5b770e1e}{remove\+Stream\+History}} (ID stream\+ID)
+\item 
+bool \mbox{\hyperlink{class_viewer_a423fd7f96da27528fcebcd3d4ad804be}{is\+In\+Stream\+History}} (ID stream\+ID)
+\item 
+void \mbox{\hyperlink{class_viewer_a2e3d4cc84096960bf20910cc19727aec}{give\+Feed\+Back}} (feedback fb\+Value)
+\item 
+void \mbox{\hyperlink{class_viewer_af1a71f43c2bf10d81c4f5ece5443f54b}{give\+Feed\+Back}} (const std\+::string \&comment)
+\item 
+const std\+::vector$<$ ID $>$ \& \mbox{\hyperlink{class_viewer_a644d150da4d0deef96521b77a11893ff}{get\+History}} () const
+\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_viewer_a69cba855e24a62ae4d55760abab7a2bf}{get\+Following\+Streamers}} () const
+\item 
+void \mbox{\hyperlink{class_viewer_a14a3161082c527cd3d2126b960ea690a}{read\+From\+File}} (std\+::ifstream \&ff) override
+\item 
+void \mbox{\hyperlink{class_viewer_afebc5e04772f1c32ab6a071a2026ae23}{write\+To\+File}} (std\+::ofstream \&ff) override
+\item 
+std\+::string \mbox{\hyperlink{class_viewer_ac03b73f22cb0152bc6190a7665e30e53}{get\+Short\+Description}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_viewer_a9d97eaf6fa1b3e7d3849dea392d50715}{get\+Long\+Description}} (bool see\+Password=false) const override
+\item 
+std\+::string \mbox{\hyperlink{class_viewer_a12ce7cf99729db78277a7716c18c37ea}{get\+Follow\+Details}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_viewer_a703a1de42f85a770324599ac4689552d}{get\+History\+Details}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_viewer_a83126830291e1289a10242ffca90f508}\label{class_viewer_a83126830291e1289a10242ffca90f508}} 
+ID \mbox{\hyperlink{class_viewer_a83126830291e1289a10242ffca90f508}{curr\+Watching}} = 0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stream}{Stream}} currently watching. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_viewer_ab1b31d214c1d4220015c6e7c07addb8f}\label{class_viewer_ab1b31d214c1d4220015c6e7c07addb8f}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_viewer_ab1b31d214c1d4220015c6e7c07addb8f}{following\+Streamers}}
+\begin{DoxyCompactList}\small\item\em List of streamers nicks the viewer follows. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_viewer_ac1d4073b074015642a34c5cc624804a6}\label{class_viewer_ac1d4073b074015642a34c5cc624804a6}} 
+std\+::vector$<$ ID $>$ \mbox{\hyperlink{class_viewer_ac1d4073b074015642a34c5cc624804a6}{stream\+History}}
+\begin{DoxyCompactList}\small\item\em Vector of streams that user have seen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_viewer_a4bd5b986d384cba327745d6b202989c3}\label{class_viewer_a4bd5b986d384cba327745d6b202989c3}} 
+static const unsigned \mbox{\hyperlink{class_viewer_a4bd5b986d384cba327745d6b202989c3}{minimum\+Age}} = V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE
+\begin{DoxyCompactList}\small\item\em Minimum age to be able to create a viewer account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_viewer}{Viewer}} class Specific type of user that can watch streams and interact with them 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_viewer_a746a977192d8bfd3d321618bd8eac02a}\label{class_viewer_a746a977192d8bfd3d321618bd8eac02a}} 
+\index{Viewer@{Viewer}!Viewer@{Viewer}}
+\index{Viewer@{Viewer}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{Viewer()}{Viewer()}}
+{\footnotesize\ttfamily Viewer\+::\+Viewer (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{nick\+Name,  }\item[{std\+::string}]{password,  }\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{birth\+Date }\end{DoxyParamCaption})}
+
+Constructor when creating a new user 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_restricted_age_exception}{Restricted\+Age\+Exception}}} & if the user is not allowed to create an account \\
+\hline
+{\em \mbox{\hyperlink{class_restricted_stream_exception}{Restricted\+Stream\+Exception}}} & if the user is not whitelisted \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Name of the user \\
+\hline
+{\em nick\+Name} & -\/ Nickname \\
+\hline
+{\em password} & -\/ \mbox{\hyperlink{class_user}{User}} password \\
+\hline
+{\em birth\+Date} & -\/ \mbox{\hyperlink{class_date}{Date}} of Birth\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_restricted_age_exception}{Restricted\+Age\+Exception}}} & if the user is not allowed to create an account \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_viewer_a10090e3617c3fc8694cb575021dd5bbe}\label{class_viewer_a10090e3617c3fc8694cb575021dd5bbe}} 
+\index{Viewer@{Viewer}!addStreamHistory@{addStreamHistory}}
+\index{addStreamHistory@{addStreamHistory}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{addStreamHistory()}{addStreamHistory()}}
+{\footnotesize\ttfamily void Viewer\+::add\+Stream\+History (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption})}
+
+Add streamer to the streamer history
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & -\/ streamer to be added to the history \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_ad710eeef4c7d086e545305df3e826d6c}\label{class_viewer_ad710eeef4c7d086e545305df3e826d6c}} 
+\index{Viewer@{Viewer}!followStreamer@{followStreamer}}
+\index{followStreamer@{followStreamer}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{followStreamer()}{followStreamer()}}
+{\footnotesize\ttfamily void Viewer\+::follow\+Streamer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{streamer }\end{DoxyParamCaption})}
+
+Follow a streamer 
+\begin{DoxyParams}{Parameters}
+{\em streamer} & -\/ The desired streamer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_a11b39d3ed6d03eda01227fd31cc05666}\label{class_viewer_a11b39d3ed6d03eda01227fd31cc05666}} 
+\index{Viewer@{Viewer}!getCurrWatching@{getCurrWatching}}
+\index{getCurrWatching@{getCurrWatching}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getCurrWatching()}{getCurrWatching()}}
+{\footnotesize\ttfamily ID Viewer\+::get\+Curr\+Watching (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ ID of current watching streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_a12ce7cf99729db78277a7716c18c37ea}\label{class_viewer_a12ce7cf99729db78277a7716c18c37ea}} 
+\index{Viewer@{Viewer}!getFollowDetails@{getFollowDetails}}
+\index{getFollowDetails@{getFollowDetails}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getFollowDetails()}{getFollowDetails()}}
+{\footnotesize\ttfamily std\+::string Viewer\+::get\+Follow\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ string with all the following 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_ac3f28c852267962555029bd7c3130b40}{User}}.
+
+\mbox{\Hypertarget{class_viewer_a69cba855e24a62ae4d55760abab7a2bf}\label{class_viewer_a69cba855e24a62ae4d55760abab7a2bf}} 
+\index{Viewer@{Viewer}!getFollowingStreamers@{getFollowingStreamers}}
+\index{getFollowingStreamers@{getFollowingStreamers}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getFollowingStreamers()}{getFollowingStreamers()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Viewer\+::get\+Following\+Streamers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the streamers the user is following \begin{DoxyReturn}{Returns}
+following streamers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_a644d150da4d0deef96521b77a11893ff}\label{class_viewer_a644d150da4d0deef96521b77a11893ff}} 
+\index{Viewer@{Viewer}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily const std\+::vector$<$ ID $>$ \& Viewer\+::get\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the stream history of viewer \begin{DoxyReturn}{Returns}
+stream history 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_a703a1de42f85a770324599ac4689552d}\label{class_viewer_a703a1de42f85a770324599ac4689552d}} 
+\index{Viewer@{Viewer}!getHistoryDetails@{getHistoryDetails}}
+\index{getHistoryDetails@{getHistoryDetails}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getHistoryDetails()}{getHistoryDetails()}}
+{\footnotesize\ttfamily std\+::string Viewer\+::get\+History\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ string with all the streamer history 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_a7b669ba858b83459908ee913d4a344c4}{User}}.
+
+\mbox{\Hypertarget{class_viewer_a9d97eaf6fa1b3e7d3849dea392d50715}\label{class_viewer_a9d97eaf6fa1b3e7d3849dea392d50715}} 
+\index{Viewer@{Viewer}!getLongDescription@{getLongDescription}}
+\index{getLongDescription@{getLongDescription}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getLongDescription()}{getLongDescription()}}
+{\footnotesize\ttfamily std\+::string Viewer\+::get\+Long\+Description (\begin{DoxyParamCaption}\item[{bool}]{see\+Password = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ detailed info about user 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_accb4cebf492624075f36cec41e2d2cd8}{User}}.
+
+\mbox{\Hypertarget{class_viewer_ac03b73f22cb0152bc6190a7665e30e53}\label{class_viewer_ac03b73f22cb0152bc6190a7665e30e53}} 
+\index{Viewer@{Viewer}!getShortDescription@{getShortDescription}}
+\index{getShortDescription@{getShortDescription}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getShortDescription()}{getShortDescription()}}
+{\footnotesize\ttfamily std\+::string Viewer\+::get\+Short\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ relevant info about user 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_a9594fc69a79f87cb7863f6907f333f1e}{User}}.
+
+\mbox{\Hypertarget{class_viewer_a665c1c55293581210f618323c137f560}\label{class_viewer_a665c1c55293581210f618323c137f560}} 
+\index{Viewer@{Viewer}!getUserType@{getUserType}}
+\index{getUserType@{getUserType}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{getUserType()}{getUserType()}}
+{\footnotesize\ttfamily user\+Type Viewer\+::get\+User\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ user type = viewer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_a9788970fa5be571d1189bbe7ee523ebd}{User}}.
+
+\mbox{\Hypertarget{class_viewer_af1a71f43c2bf10d81c4f5ece5443f54b}\label{class_viewer_af1a71f43c2bf10d81c4f5ece5443f54b}} 
+\index{Viewer@{Viewer}!giveFeedBack@{giveFeedBack}}
+\index{giveFeedBack@{giveFeedBack}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{giveFeedBack()}{giveFeedBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Viewer\+::give\+Feed\+Back (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{comment }\end{DoxyParamCaption})}
+
+Leave a comment on the (private) streamer currently watching 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_not_in_stream_exception}{Not\+In\+Stream\+Exception}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_not_private_stream_exception}{Not\+Private\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em comment} & -\/ The comment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_a2e3d4cc84096960bf20910cc19727aec}\label{class_viewer_a2e3d4cc84096960bf20910cc19727aec}} 
+\index{Viewer@{Viewer}!giveFeedBack@{giveFeedBack}}
+\index{giveFeedBack@{giveFeedBack}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{giveFeedBack()}{giveFeedBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Viewer\+::give\+Feed\+Back (\begin{DoxyParamCaption}\item[{feedback}]{fb\+Value }\end{DoxyParamCaption})}
+
+Gives feedback 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_not_in_stream_exception}{Not\+In\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em fb\+Value} & -\/ Feedback value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_a66e93241725a881a364b44f45027f302}\label{class_viewer_a66e93241725a881a364b44f45027f302}} 
+\index{Viewer@{Viewer}!isFollowing@{isFollowing}}
+\index{isFollowing@{isFollowing}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{isFollowing()}{isFollowing()}}
+{\footnotesize\ttfamily bool Viewer\+::is\+Following (\begin{DoxyParamCaption}\item[{std\+::string \&}]{streamer }\end{DoxyParamCaption})}
+
+Checks if the viewers is following a streamer 
+\begin{DoxyParams}{Parameters}
+{\em streamer} & -\/ The streamer\textquotesingle{}s nick \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_a423fd7f96da27528fcebcd3d4ad804be}\label{class_viewer_a423fd7f96da27528fcebcd3d4ad804be}} 
+\index{Viewer@{Viewer}!isInStreamHistory@{isInStreamHistory}}
+\index{isInStreamHistory@{isInStreamHistory}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{isInStreamHistory()}{isInStreamHistory()}}
+{\footnotesize\ttfamily bool Viewer\+::is\+In\+Stream\+History (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption})}
+
+Checks if a streamer is in the streamer history 
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & -\/ id of the streamer to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true if it is, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_add3b5222510b7830e49317e5c93642ea}\label{class_viewer_add3b5222510b7830e49317e5c93642ea}} 
+\index{Viewer@{Viewer}!joinStream@{joinStream}}
+\index{joinStream@{joinStream}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{joinStream()}{joinStream()}}
+{\footnotesize\ttfamily void Viewer\+::join\+Stream (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption})}
+
+Join a streamer 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_does_not_exist}{Does\+Not\+Exist}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_already_in_stream_exception}{Already\+In\+Stream\+Exception}}} & \\
+\hline
+{\em Restricted\+Age\+Expeption} & \\
+\hline
+{\em Restricted\+Stream\+Expeption} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & -\/ Desired streamer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_a00a2bd77589625f467a647fd54b185e2}\label{class_viewer_a00a2bd77589625f467a647fd54b185e2}} 
+\index{Viewer@{Viewer}!kickedStream@{kickedStream}}
+\index{kickedStream@{kickedStream}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{kickedStream()}{kickedStream()}}
+{\footnotesize\ttfamily void Viewer\+::kicked\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to be used only when deleting a streamer from the system deleting the streamer pointer \mbox{\Hypertarget{class_viewer_a1bcb6d912b95fe17dca5d6c0b811ffe7}\label{class_viewer_a1bcb6d912b95fe17dca5d6c0b811ffe7}} 
+\index{Viewer@{Viewer}!leaveStream@{leaveStream}}
+\index{leaveStream@{leaveStream}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{leaveStream()}{leaveStream()}}
+{\footnotesize\ttfamily void Viewer\+::leave\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Leave the current streamer 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_not_in_stream_exception}{Not\+In\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_viewer_a14a3161082c527cd3d2126b960ea690a}\label{class_viewer_a14a3161082c527cd3d2126b960ea690a}} 
+\index{Viewer@{Viewer}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily void Viewer\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reading user info from file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_user_a447ccf577fa7a00dd3dce269877bfb86}{User}}.
+
+\mbox{\Hypertarget{class_viewer_a1b3c4e1c10cbbf716e4c209c5b770e1e}\label{class_viewer_a1b3c4e1c10cbbf716e4c209c5b770e1e}} 
+\index{Viewer@{Viewer}!removeStreamHistory@{removeStreamHistory}}
+\index{removeStreamHistory@{removeStreamHistory}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{removeStreamHistory()}{removeStreamHistory()}}
+{\footnotesize\ttfamily void Viewer\+::remove\+Stream\+History (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption})}
+
+Remove streamer from the streamer history
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & -\/ streamer to be removed from the history \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_a88966fe692a7715180f2dce994d7e067}\label{class_viewer_a88966fe692a7715180f2dce994d7e067}} 
+\index{Viewer@{Viewer}!unFollowStreamer@{unFollowStreamer}}
+\index{unFollowStreamer@{unFollowStreamer}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{unFollowStreamer()}{unFollowStreamer()}}
+{\footnotesize\ttfamily void Viewer\+::un\+Follow\+Streamer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{streamer }\end{DoxyParamCaption})}
+
+Unfollow a streamer 
+\begin{DoxyParams}{Parameters}
+{\em streamer} & -\/ Desired streamer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewer_ad7b314efbe2fed24b6b6ba7aada7cf70}\label{class_viewer_ad7b314efbe2fed24b6b6ba7aada7cf70}} 
+\index{Viewer@{Viewer}!watching@{watching}}
+\index{watching@{watching}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{watching()}{watching()}}
+{\footnotesize\ttfamily bool Viewer\+::watching (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+boolean indicating if the user is watching some streamer or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_viewer_afebc5e04772f1c32ab6a071a2026ae23}\label{class_viewer_afebc5e04772f1c32ab6a071a2026ae23}} 
+\index{Viewer@{Viewer}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!Viewer@{Viewer}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily void Viewer\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Writing user info to file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_user_a4442d620bac3a9f7f3c830106d02ea31}{User}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Users/Viewer.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Users/Viewer.\+cpp\end{DoxyCompactItemize}

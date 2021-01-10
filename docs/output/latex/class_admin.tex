@@ -1,0 +1,109 @@
+\hypertarget{class_admin}{}\doxysection{Admin Class Reference}
+\label{class_admin}\index{Admin@{Admin}}
+Inheritance diagram for Admin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_admin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_admin_a5679bcbff6e58320d69a1dc03a262981}\label{class_admin_a5679bcbff6e58320d69a1dc03a262981}} 
+{\bfseries Admin} (std\+::string \mbox{\hyperlink{class_user_a085d8d69282b6298964eab8351584536}{name}}, std\+::string \mbox{\hyperlink{class_user_a32d81f3ba0a1831f3b91bd0703ede174}{nick\+Name}}, std\+::string \mbox{\hyperlink{class_user_ac2f2e75b15e8eb6cbb030fc85a6cd59f}{password}}, const \mbox{\hyperlink{class_date}{Date}} \&birth\+Date)
+\item 
+user\+Type \mbox{\hyperlink{class_admin_a2445d20d78491ad1253c92beac318126}{get\+User\+Type}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_admin_afa1b0f173825131650404999a18f18bd}{get\+Short\+Description}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_admin_a068a25a0fe6573673b5a7270495f6bd7}{get\+Long\+Description}} (bool see\+Password=false) const override
+\item 
+\mbox{\Hypertarget{class_admin_a315f7ca45ab7b483fe6e2ac88681188d}\label{class_admin_a315f7ca45ab7b483fe6e2ac88681188d}} 
+std\+::string \mbox{\hyperlink{class_admin_a315f7ca45ab7b483fe6e2ac88681188d}{get\+Follow\+Details}} () const override
+\begin{DoxyCompactList}\small\item\em Not applicable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_admin_a9cce00c46d29ad9aa25fd3de14deacf8}\label{class_admin_a9cce00c46d29ad9aa25fd3de14deacf8}} 
+std\+::string \mbox{\hyperlink{class_admin_a9cce00c46d29ad9aa25fd3de14deacf8}{get\+History\+Details}} () const override
+\begin{DoxyCompactList}\small\item\em Not applicable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_a8e1c11f9c2cd02fc7895d31de417da85}{write\+To\+File}} (std\+::ofstream \&ff) override
+\item 
+void \mbox{\hyperlink{class_admin_a006c4d43afa50293cff6d104dd237196}{read\+From\+File}} (std\+::ifstream \&ff) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_a068a25a0fe6573673b5a7270495f6bd7}\label{class_admin_a068a25a0fe6573673b5a7270495f6bd7}} 
+\index{Admin@{Admin}!getLongDescription@{getLongDescription}}
+\index{getLongDescription@{getLongDescription}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{getLongDescription()}{getLongDescription()}}
+{\footnotesize\ttfamily std\+::string Admin\+::get\+Long\+Description (\begin{DoxyParamCaption}\item[{bool}]{see\+Password = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+Long description 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_accb4cebf492624075f36cec41e2d2cd8}{User}}.
+
+\mbox{\Hypertarget{class_admin_afa1b0f173825131650404999a18f18bd}\label{class_admin_afa1b0f173825131650404999a18f18bd}} 
+\index{Admin@{Admin}!getShortDescription@{getShortDescription}}
+\index{getShortDescription@{getShortDescription}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{getShortDescription()}{getShortDescription()}}
+{\footnotesize\ttfamily std\+::string Admin\+::get\+Short\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+Short description 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_a9594fc69a79f87cb7863f6907f333f1e}{User}}.
+
+\mbox{\Hypertarget{class_admin_a2445d20d78491ad1253c92beac318126}\label{class_admin_a2445d20d78491ad1253c92beac318126}} 
+\index{Admin@{Admin}!getUserType@{getUserType}}
+\index{getUserType@{getUserType}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{getUserType()}{getUserType()}}
+{\footnotesize\ttfamily user\+Type Admin\+::get\+User\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ user type = streamer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_user_a9788970fa5be571d1189bbe7ee523ebd}{User}}.
+
+\mbox{\Hypertarget{class_admin_a006c4d43afa50293cff6d104dd237196}\label{class_admin_a006c4d43afa50293cff6d104dd237196}} 
+\index{Admin@{Admin}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily void Admin\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reading user info from file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_user_a447ccf577fa7a00dd3dce269877bfb86}{User}}.
+
+\mbox{\Hypertarget{class_admin_a8e1c11f9c2cd02fc7895d31de417da85}\label{class_admin_a8e1c11f9c2cd02fc7895d31de417da85}} 
+\index{Admin@{Admin}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily void Admin\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Writing user info to file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_user_a4442d620bac3a9f7f3c830106d02ea31}{User}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Users/Admin.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Users/Admin.\+cpp\end{DoxyCompactItemize}

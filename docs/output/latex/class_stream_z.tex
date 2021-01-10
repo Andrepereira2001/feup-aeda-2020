@@ -1,0 +1,207 @@
+\hypertarget{class_stream_z}{}\doxysection{StreamZ Class Reference}
+\label{class_stream_z}\index{StreamZ@{StreamZ}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stream_z_a67c72282931d47f8382597dd87807420}{init}} ()
+\item 
+void \mbox{\hyperlink{class_stream_z_a7449866f2bb06173725bf60b58b3243c}{init}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{class_stream_z_aaaef39724c19385be0e69c5391330632}{shutdown}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{class_stream_z_a9ad162b2d816338c3a89465c627a51ae}{run}} ()
+\item 
+void \mbox{\hyperlink{class_stream_z_ad574149907dd55c020bb9eaec6efd997}{login}} ()
+\item 
+void \mbox{\hyperlink{class_stream_z_ae5ad1101be36d84e584c12055c5a0264}{register\+User}} ()
+\item 
+void \mbox{\hyperlink{class_stream_z_acd39438a786d442943b29b4e60c24611}{backup\+Data}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{class_stream_z_a58616eee2da943f9a21050c892dc9aea}{read\+From\+File}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{class_stream_z_ae666b7fc086183e2cfe1fa79ef06e048}{reset\+Database}} ()
+\item 
+\mbox{\hyperlink{class_sorting_manager}{Sorting\+Manager}} $\ast$ \mbox{\hyperlink{class_stream_z_a9e735487b62bf39ab984ee921e31edda}{get\+SortM}} ()
+\item 
+\mbox{\hyperlink{class_search_manager}{Search\+Manager}} $\ast$ \mbox{\hyperlink{class_stream_z_a80aba4008ae3a72c60ad3cbe39ca55f0}{get\+SearchM}} ()
+\item 
+\mbox{\hyperlink{class_user_manager}{User\+Manager}} $\ast$ \mbox{\hyperlink{class_stream_z_a6b21233e5ab05e1b625f03ffeef6c396}{get\+UserM}} ()
+\item 
+\mbox{\hyperlink{class_leader_board}{Leader\+Board}} $\ast$ \mbox{\hyperlink{class_stream_z_a1d609fa541ca130c0fa7c93cb72268af}{get\+Leader\+Board}} ()
+\item 
+\mbox{\hyperlink{class_admin_ops}{Admin\+Ops}} $\ast$ \mbox{\hyperlink{class_stream_z_a966e6512191f1ba514d3488b5e3c6cef}{get\+Admin\+Ops}} ()
+\item 
+\mbox{\hyperlink{class_stream_manager}{Stream\+Manager}} $\ast$ \mbox{\hyperlink{class_stream_z_a1fe9b16f1dd1617326bae423923f71dd}{get\+Stream\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_database}{Database}} \& \mbox{\hyperlink{class_stream_z_a59d1559ca72ea586fb43111ee8e22139}{get\+Database}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_z_a83f73d01d29d46c1ba20acb8ac8244bb}\label{class_stream_z_a83f73d01d29d46c1ba20acb8ac8244bb}} 
+\mbox{\hyperlink{class_sorting_manager}{Sorting\+Manager}} $\ast$ {\bfseries sorting\+Manager}
+\item 
+\mbox{\Hypertarget{class_stream_z_a00f0240a19169d4f2e82ddad9d22cc05}\label{class_stream_z_a00f0240a19169d4f2e82ddad9d22cc05}} 
+\mbox{\hyperlink{class_search_manager}{Search\+Manager}} $\ast$ {\bfseries search\+Manager}
+\item 
+\mbox{\Hypertarget{class_stream_z_a7cdfb5cfc3ce18bb374b61f28f0803f6}\label{class_stream_z_a7cdfb5cfc3ce18bb374b61f28f0803f6}} 
+\mbox{\hyperlink{class_user_manager}{User\+Manager}} $\ast$ {\bfseries user\+Manager}
+\item 
+\mbox{\Hypertarget{class_stream_z_ae03f3952282259a9295947b9f54fc9ef}\label{class_stream_z_ae03f3952282259a9295947b9f54fc9ef}} 
+\mbox{\hyperlink{class_stream_manager}{Stream\+Manager}} $\ast$ {\bfseries stream\+Manager}
+\item 
+\mbox{\Hypertarget{class_stream_z_ad2772f1aa3a450af760f19d13b934926}\label{class_stream_z_ad2772f1aa3a450af760f19d13b934926}} 
+\mbox{\hyperlink{class_leader_board}{Leader\+Board}} $\ast$ {\bfseries leaderboard}
+\item 
+\mbox{\Hypertarget{class_stream_z_a20ae9e6989ff3a49b4bcc375312bbde3}\label{class_stream_z_a20ae9e6989ff3a49b4bcc375312bbde3}} 
+\mbox{\hyperlink{class_admin_ops}{Admin\+Ops}} $\ast$ {\bfseries admin\+Ops}
+\item 
+\mbox{\Hypertarget{class_stream_z_ac79a897042f91b8e725d973e46560a43}\label{class_stream_z_ac79a897042f91b8e725d973e46560a43}} 
+\mbox{\hyperlink{class_database}{Database}} {\bfseries data\+Base}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stream_z_acd39438a786d442943b29b4e60c24611}\label{class_stream_z_acd39438a786d442943b29b4e60c24611}} 
+\index{StreamZ@{StreamZ}!backupData@{backupData}}
+\index{backupData@{backupData}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{backupData()}{backupData()}}
+{\footnotesize\ttfamily void Stream\+Z\+::backup\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Backup data to file File will be stored as users\+\_\+file\+Name and streams\+\_\+file\+Name 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ Name of the database file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_z_a966e6512191f1ba514d3488b5e3c6cef}\label{class_stream_z_a966e6512191f1ba514d3488b5e3c6cef}} 
+\index{StreamZ@{StreamZ}!getAdminOps@{getAdminOps}}
+\index{getAdminOps@{getAdminOps}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getAdminOps()}{getAdminOps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_admin_ops}{Admin\+Ops}} $\ast$ Stream\+Z\+::get\+Admin\+Ops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the admin operations manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a59d1559ca72ea586fb43111ee8e22139}\label{class_stream_z_a59d1559ca72ea586fb43111ee8e22139}} 
+\index{StreamZ@{StreamZ}!getDatabase@{getDatabase}}
+\index{getDatabase@{getDatabase}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getDatabase()}{getDatabase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_database}{Database}} \& Stream\+Z\+::get\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Reference to the database manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a1d609fa541ca130c0fa7c93cb72268af}\label{class_stream_z_a1d609fa541ca130c0fa7c93cb72268af}} 
+\index{StreamZ@{StreamZ}!getLeaderBoard@{getLeaderBoard}}
+\index{getLeaderBoard@{getLeaderBoard}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getLeaderBoard()}{getLeaderBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_leader_board}{Leader\+Board}} $\ast$ Stream\+Z\+::get\+Leader\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the leaderboard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a80aba4008ae3a72c60ad3cbe39ca55f0}\label{class_stream_z_a80aba4008ae3a72c60ad3cbe39ca55f0}} 
+\index{StreamZ@{StreamZ}!getSearchM@{getSearchM}}
+\index{getSearchM@{getSearchM}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getSearchM()}{getSearchM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_search_manager}{Search\+Manager}} $\ast$ Stream\+Z\+::get\+SearchM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the sorting manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a9e735487b62bf39ab984ee921e31edda}\label{class_stream_z_a9e735487b62bf39ab984ee921e31edda}} 
+\index{StreamZ@{StreamZ}!getSortM@{getSortM}}
+\index{getSortM@{getSortM}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getSortM()}{getSortM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sorting_manager}{Sorting\+Manager}} $\ast$ Stream\+Z\+::get\+SortM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the sorting manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a1fe9b16f1dd1617326bae423923f71dd}\label{class_stream_z_a1fe9b16f1dd1617326bae423923f71dd}} 
+\index{StreamZ@{StreamZ}!getStreamManager@{getStreamManager}}
+\index{getStreamManager@{getStreamManager}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getStreamManager()}{getStreamManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stream_manager}{Stream\+Manager}} $\ast$ Stream\+Z\+::get\+Stream\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the stream manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a6b21233e5ab05e1b625f03ffeef6c396}\label{class_stream_z_a6b21233e5ab05e1b625f03ffeef6c396}} 
+\index{StreamZ@{StreamZ}!getUserM@{getUserM}}
+\index{getUserM@{getUserM}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{getUserM()}{getUserM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user_manager}{User\+Manager}} $\ast$ Stream\+Z\+::get\+UserM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Pointer to active the user manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_z_a67c72282931d47f8382597dd87807420}\label{class_stream_z_a67c72282931d47f8382597dd87807420}} 
+\index{StreamZ@{StreamZ}!init@{init}}
+\index{init@{init}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Stream\+Z\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize with clean data Used for testing \mbox{\Hypertarget{class_stream_z_a7449866f2bb06173725bf60b58b3243c}\label{class_stream_z_a7449866f2bb06173725bf60b58b3243c}} 
+\index{StreamZ@{StreamZ}!init@{init}}
+\index{init@{init}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Stream\+Z\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Initialize the program with a specified database file path 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_z_ad574149907dd55c020bb9eaec6efd997}\label{class_stream_z_ad574149907dd55c020bb9eaec6efd997}} 
+\index{StreamZ@{StreamZ}!login@{login}}
+\index{login@{login}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily void Stream\+Z\+::login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Asks the user to login and insert the correct credentials. \mbox{\Hypertarget{class_stream_z_a58616eee2da943f9a21050c892dc9aea}\label{class_stream_z_a58616eee2da943f9a21050c892dc9aea}} 
+\index{StreamZ@{StreamZ}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily void Stream\+Z\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Read data from file Files will be read as users\+\_\+file\+Name and streams\+\_\+file\+Name 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ Name of the database file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_z_ae5ad1101be36d84e584c12055c5a0264}\label{class_stream_z_ae5ad1101be36d84e584c12055c5a0264}} 
+\index{StreamZ@{StreamZ}!registerUser@{registerUser}}
+\index{registerUser@{registerUser}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{registerUser()}{registerUser()}}
+{\footnotesize\ttfamily void Stream\+Z\+::register\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Asks the user to register. \mbox{\Hypertarget{class_stream_z_ae666b7fc086183e2cfe1fa79ef06e048}\label{class_stream_z_ae666b7fc086183e2cfe1fa79ef06e048}} 
+\index{StreamZ@{StreamZ}!resetDatabase@{resetDatabase}}
+\index{resetDatabase@{resetDatabase}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{resetDatabase()}{resetDatabase()}}
+{\footnotesize\ttfamily void Stream\+Z\+::reset\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean the database \mbox{\Hypertarget{class_stream_z_a9ad162b2d816338c3a89465c627a51ae}\label{class_stream_z_a9ad162b2d816338c3a89465c627a51ae}} 
+\index{StreamZ@{StreamZ}!run@{run}}
+\index{run@{run}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Stream\+Z\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Runs the program and prompts the user to login/register/exit the program. \mbox{\Hypertarget{class_stream_z_aaaef39724c19385be0e69c5391330632}\label{class_stream_z_aaaef39724c19385be0e69c5391330632}} 
+\index{StreamZ@{StreamZ}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!StreamZ@{StreamZ}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void Stream\+Z\+::shutdown (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Shutdown the system and save the data 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Stream\+Z.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Stream\+Z.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,284 @@
+\hypertarget{class_stream}{}\doxysection{Stream Class Reference}
+\label{class_stream}\index{Stream@{Stream}}
+Inheritance diagram for Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_stream}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stream_a4fa591d02610ce2a8c3d5348ec12f78e}{Stream}} (std\+::string \mbox{\hyperlink{class_stream_a740de4c2b13297152661213397ae2b54}{title}}, language language, genre genre, std\+::string \mbox{\hyperlink{class_stream_ad6504504b2d424b842bc018f9fc04dd4}{streamer\+Nick}})
+\item 
+const std\+::string \& \mbox{\hyperlink{class_stream_ac1d6e611af22f4c7774c59a8c83e078c}{get\+Title}} () const
+\item 
+const language \& \mbox{\hyperlink{class_stream_a767e1096897f58aa9c7f5ef167d3dd6c}{get\+Stream\+Language}} () const
+\item 
+const \mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_stream_ae6687b98c0c8c56b6d28e5b6e5a586b9}{get\+Begin\+Date}} () const
+\item 
+genre \mbox{\hyperlink{class_stream_aa1731ffbd170342cb5685946e97b50b0}{get\+Genre}} () const
+\item 
+ID \mbox{\hyperlink{class_stream_a7be306831c64d2d8b8ed8f40c033ea87}{get\+Stream\+Id}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{class_stream_a18adcc1af02e111f3f729398f637e8f8}{get\+Streamer\+Nick}} () const
+\item 
+virtual stream\+Type \mbox{\hyperlink{class_stream_a8ccf7198447019f39c67fa625bcaa415}{get\+Stream\+Type}} () const =0
+\item 
+virtual stream\+State \mbox{\hyperlink{class_stream_af11010ae2c995cdbaf1a3dd5be827ce3}{get\+Stream\+State}} () const =0
+\item 
+virtual stream\+File\+Type \mbox{\hyperlink{class_stream_a8616b0fb38791493be23c986fa00f677}{get\+Stream\+File\+Type}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{class_stream_a5422b303a23a7c27521a24c3797e1867}{get\+Num\+Viewers}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_stream_a64cb743ffbcd6d4f6ee8e69b44e4f1ec}{get\+Short\+Description}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_stream_af051655a9566f3536879ab17a8da182c}{get\+Long\+Description}} () const =0
+\item 
+void \mbox{\hyperlink{class_stream_a9e0d87738f198c359f441256aa9923d1}{set\+Stream\+Id}} (ID id)
+\item 
+void \mbox{\hyperlink{class_stream_ae4685d2905ae4267d3acd073d0643c48}{set\+StreamZ}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$p\+StreamZ)
+\item 
+virtual void \mbox{\hyperlink{class_stream_a06292e0b2ea0c774e6f5f4509660c5ae}{read\+From\+File}} (std\+::ifstream \&ff)=0
+\item 
+virtual void \mbox{\hyperlink{class_stream_a18aaa872f14c92b7663e4d6119997f64}{write\+To\+File}} (std\+::ofstream \&ff)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_a2d4e44d221103c3060323aa39cde8aa4}\label{class_stream_a2d4e44d221103c3060323aa39cde8aa4}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ \mbox{\hyperlink{class_stream_a2d4e44d221103c3060323aa39cde8aa4}{streamZ}} = nullptr
+\begin{DoxyCompactList}\small\item\em General class that have all the info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a38c95c67222ca7c9681c2623c6971bd6}\label{class_stream_a38c95c67222ca7c9681c2623c6971bd6}} 
+ID \mbox{\hyperlink{class_stream_a38c95c67222ca7c9681c2623c6971bd6}{stream\+Id}}
+\begin{DoxyCompactList}\small\item\em ID of the streamer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a740de4c2b13297152661213397ae2b54}\label{class_stream_a740de4c2b13297152661213397ae2b54}} 
+std\+::string \mbox{\hyperlink{class_stream_a740de4c2b13297152661213397ae2b54}{title}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stream}{Stream}} title. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a1d6c381d8b900e6f0d06c819843af3a4}\label{class_stream_a1d6c381d8b900e6f0d06c819843af3a4}} 
+\mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_stream_a1d6c381d8b900e6f0d06c819843af3a4}{begin\+Date}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stream}{Stream}} begin date. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a3b877e58d52f752102a2fa5068c95dd5}\label{class_stream_a3b877e58d52f752102a2fa5068c95dd5}} 
+language \mbox{\hyperlink{class_stream_a3b877e58d52f752102a2fa5068c95dd5}{stream\+Language}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stream}{Stream}} language. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}\label{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}} 
+genre \mbox{\hyperlink{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}{stream\+Genre}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stream}{Stream}} genre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stream_ad6504504b2d424b842bc018f9fc04dd4}\label{class_stream_ad6504504b2d424b842bc018f9fc04dd4}} 
+std\+::string \mbox{\hyperlink{class_stream_ad6504504b2d424b842bc018f9fc04dd4}{streamer\+Nick}}
+\begin{DoxyCompactList}\small\item\em Nick\+Name of the streamer streamer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stream_a4fa591d02610ce2a8c3d5348ec12f78e}\label{class_stream_a4fa591d02610ce2a8c3d5348ec12f78e}} 
+\index{Stream@{Stream}!Stream@{Stream}}
+\index{Stream@{Stream}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{Stream()}{Stream()}}
+{\footnotesize\ttfamily Stream\+::\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{language}]{language,  }\item[{genre}]{genre,  }\item[{std\+::string}]{streamer\+Nick }\end{DoxyParamCaption})}
+
+Constructor when creating a new streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ Title of the streamer \\
+\hline
+{\em language} & -\/ \mbox{\hyperlink{class_stream}{Stream}} language \\
+\hline
+{\em genre} & -\/ genre of the streamer \\
+\hline
+{\em min\+Age} & -\/ Minimal age of the streamer , 12 by default \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stream_ae6687b98c0c8c56b6d28e5b6e5a586b9}\label{class_stream_ae6687b98c0c8c56b6d28e5b6e5a586b9}} 
+\index{Stream@{Stream}!getBeginDate@{getBeginDate}}
+\index{getBeginDate@{getBeginDate}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getBeginDate()}{getBeginDate()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_date}{Date}} \& Stream\+::get\+Begin\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ date when the streamer begin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_aa1731ffbd170342cb5685946e97b50b0}\label{class_stream_aa1731ffbd170342cb5685946e97b50b0}} 
+\index{Stream@{Stream}!getGenre@{getGenre}}
+\index{getGenre@{getGenre}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getGenre()}{getGenre()}}
+{\footnotesize\ttfamily genre Stream\+::get\+Genre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ streamer genre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_af051655a9566f3536879ab17a8da182c}\label{class_stream_af051655a9566f3536879ab17a8da182c}} 
+\index{Stream@{Stream}!getLongDescription@{getLongDescription}}
+\index{getLongDescription@{getLongDescription}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getLongDescription()}{getLongDescription()}}
+{\footnotesize\ttfamily virtual std\+::string Stream\+::get\+Long\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ detailed info about streamer 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a76a210cb59952e498fb40ca15d90cfd3}{Public\+Stream}}, \mbox{\hyperlink{class_private_stream_a269319755cd045d68d3b6f08d407d566}{Private\+Stream}}, and \mbox{\hyperlink{class_finished_stream_a7be66e5c531a6cf9501a62c8dcd6ecf5}{Finished\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a5422b303a23a7c27521a24c3797e1867}\label{class_stream_a5422b303a23a7c27521a24c3797e1867}} 
+\index{Stream@{Stream}!getNumViewers@{getNumViewers}}
+\index{getNumViewers@{getNumViewers}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getNumViewers()}{getNumViewers()}}
+{\footnotesize\ttfamily virtual unsigned int Stream\+::get\+Num\+Viewers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ Number of viewers 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_live_stream_aaa02f7d8667de67b84a8e88b8c5254fe}{Live\+Stream}}, and \mbox{\hyperlink{class_finished_stream_a025ada24a563d150118ac3fb7bccd44e}{Finished\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a64cb743ffbcd6d4f6ee8e69b44e4f1ec}\label{class_stream_a64cb743ffbcd6d4f6ee8e69b44e4f1ec}} 
+\index{Stream@{Stream}!getShortDescription@{getShortDescription}}
+\index{getShortDescription@{getShortDescription}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getShortDescription()}{getShortDescription()}}
+{\footnotesize\ttfamily virtual std\+::string Stream\+::get\+Short\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ relevant info about streamer 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a1ac3278d672fb2c23c53ba590ba94133}{Public\+Stream}}, \mbox{\hyperlink{class_private_stream_a9e152e4f7d8d464f22ee5e7c1930f2af}{Private\+Stream}}, and \mbox{\hyperlink{class_finished_stream_a88df6f6c3faebd30f13a5b729c51d0e4}{Finished\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a18adcc1af02e111f3f729398f637e8f8}\label{class_stream_a18adcc1af02e111f3f729398f637e8f8}} 
+\index{Stream@{Stream}!getStreamerNick@{getStreamerNick}}
+\index{getStreamerNick@{getStreamerNick}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamerNick()}{getStreamerNick()}}
+{\footnotesize\ttfamily const std\+::string \& Stream\+::get\+Streamer\+Nick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ nick of the streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_a8616b0fb38791493be23c986fa00f677}\label{class_stream_a8616b0fb38791493be23c986fa00f677}} 
+\index{Stream@{Stream}!getStreamFileType@{getStreamFileType}}
+\index{getStreamFileType@{getStreamFileType}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamFileType()}{getStreamFileType()}}
+{\footnotesize\ttfamily virtual stream\+File\+Type Stream\+::get\+Stream\+File\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ Used to store the stream in the file 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_aca6fe8494151dcfce2480ac156a347ab}{Public\+Stream}}, \mbox{\hyperlink{class_finished_stream_ab020fb7b5fd9d5f46315d5f389bfabe2}{Finished\+Stream}}, and \mbox{\hyperlink{class_private_stream_a8e14a69d2f20ac0518581f240aa92c1b}{Private\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a7be306831c64d2d8b8ed8f40c033ea87}\label{class_stream_a7be306831c64d2d8b8ed8f40c033ea87}} 
+\index{Stream@{Stream}!getStreamId@{getStreamId}}
+\index{getStreamId@{getStreamId}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamId()}{getStreamId()}}
+{\footnotesize\ttfamily ID Stream\+::get\+Stream\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ value that represent the streamer id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_a767e1096897f58aa9c7f5ef167d3dd6c}\label{class_stream_a767e1096897f58aa9c7f5ef167d3dd6c}} 
+\index{Stream@{Stream}!getStreamLanguage@{getStreamLanguage}}
+\index{getStreamLanguage@{getStreamLanguage}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamLanguage()}{getStreamLanguage()}}
+{\footnotesize\ttfamily const language \& Stream\+::get\+Stream\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ streamer language 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_af11010ae2c995cdbaf1a3dd5be827ce3}\label{class_stream_af11010ae2c995cdbaf1a3dd5be827ce3}} 
+\index{Stream@{Stream}!getStreamState@{getStreamState}}
+\index{getStreamState@{getStreamState}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamState()}{getStreamState()}}
+{\footnotesize\ttfamily virtual stream\+State Stream\+::get\+Stream\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ State of the stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_finished_stream_a9cd5524312bc64e940be61cbb835eb0d}{Finished\+Stream}}, and \mbox{\hyperlink{class_live_stream_a8f0a34c104a21c2a6bb534bbef48ed4d}{Live\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a8ccf7198447019f39c67fa625bcaa415}\label{class_stream_a8ccf7198447019f39c67fa625bcaa415}} 
+\index{Stream@{Stream}!getStreamType@{getStreamType}}
+\index{getStreamType@{getStreamType}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getStreamType()}{getStreamType()}}
+{\footnotesize\ttfamily virtual stream\+Type Stream\+::get\+Stream\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ type of the streamer 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_public_stream_a134a285d4577041177923f9e78971871}{Public\+Stream}}, \mbox{\hyperlink{class_private_stream_a7d2b9af792d04711c3594571aa69e634}{Private\+Stream}}, \mbox{\hyperlink{class_finished_stream_ad3caed2383133f6a303f978191939b7f}{Finished\+Stream}}, and \mbox{\hyperlink{class_live_stream_a63e5b987c8de5d5ebdc826dbaf2e8b1a}{Live\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_ac1d6e611af22f4c7774c59a8c83e078c}\label{class_stream_ac1d6e611af22f4c7774c59a8c83e078c}} 
+\index{Stream@{Stream}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily const std\+::string \& Stream\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ Title of the streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stream_a06292e0b2ea0c774e6f5f4509660c5ae}\label{class_stream_a06292e0b2ea0c774e6f5f4509660c5ae}} 
+\index{Stream@{Stream}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily virtual void Stream\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Function to read a \mbox{\hyperlink{class_user}{User}} from the files 
+\begin{DoxyParams}{Parameters}
+{\em ifstream} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_live_stream_a5b1f3625fd4d5aa010b786bad496e4ef}{Live\+Stream}}, \mbox{\hyperlink{class_public_stream_a6a86e0f53f1c71e176f75225afff5c43}{Public\+Stream}}, \mbox{\hyperlink{class_private_stream_a9dd860cee060fb87d5178a35039cb6d7}{Private\+Stream}}, and \mbox{\hyperlink{class_finished_stream_a1796b26f71f94dd599f4be50cb1bc12d}{Finished\+Stream}}.
+
+\mbox{\Hypertarget{class_stream_a9e0d87738f198c359f441256aa9923d1}\label{class_stream_a9e0d87738f198c359f441256aa9923d1}} 
+\index{Stream@{Stream}!setStreamId@{setStreamId}}
+\index{setStreamId@{setStreamId}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{setStreamId()}{setStreamId()}}
+{\footnotesize\ttfamily void Stream\+::set\+Stream\+Id (\begin{DoxyParamCaption}\item[{ID}]{id }\end{DoxyParamCaption})}
+
+Set streamer id to the given value 
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ last\+ID value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_ae4685d2905ae4267d3acd073d0643c48}\label{class_stream_ae4685d2905ae4267d3acd073d0643c48}} 
+\index{Stream@{Stream}!setStreamZ@{setStreamZ}}
+\index{setStreamZ@{setStreamZ}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{setStreamZ()}{setStreamZ()}}
+{\footnotesize\ttfamily void Stream\+::set\+StreamZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{p\+StreamZ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+StreamZ} & -\/ pointer to the streamZ master class \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_a18aaa872f14c92b7663e4d6119997f64}\label{class_stream_a18aaa872f14c92b7663e4d6119997f64}} 
+\index{Stream@{Stream}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!Stream@{Stream}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily virtual void Stream\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Function to write a \mbox{\hyperlink{class_user}{User}} to the files 
+\begin{DoxyParams}{Parameters}
+{\em ofstream} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_live_stream_a6131ff59c0bafd46534654c8537e582f}{Live\+Stream}}, \mbox{\hyperlink{class_public_stream_a4cb754c31a0338cba5bec0ea548a8ab1}{Public\+Stream}}, \mbox{\hyperlink{class_private_stream_ab70606a27c10162bf479dc8bc874bc2c}{Private\+Stream}}, and \mbox{\hyperlink{class_finished_stream_a0f29fc0f0dcd0fbaa085e983153bcda9}{Finished\+Stream}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Stream.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Stream.\+cpp\end{DoxyCompactItemize}

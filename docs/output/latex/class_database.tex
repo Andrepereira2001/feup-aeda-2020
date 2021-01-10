@@ -1,0 +1,51 @@
+\hypertarget{class_database}{}\doxysection{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ \& \mbox{\hyperlink{class_database_a0f17105f009aac2e5fe2cc375a6ff42b}{get\+Users}} ()
+\item 
+std\+::unordered\+\_\+map$<$ ID, \mbox{\hyperlink{class_stream}{Stream}} $\ast$ $>$ \& \mbox{\hyperlink{class_database_aec74aa629558473c878b477797c77a2a}{get\+Streams}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_a96b8dd7e3a5af95175edeaf04e0eb731}\label{class_database_a96b8dd7e3a5af95175edeaf04e0eb731}} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ {\bfseries users}
+\item 
+\mbox{\Hypertarget{class_database_aaacc466e2115b2cd68efb37e76e0fb62}\label{class_database_aaacc466e2115b2cd68efb37e76e0fb62}} 
+std\+::unordered\+\_\+map$<$ ID, \mbox{\hyperlink{class_stream}{Stream}} $\ast$ $>$ {\bfseries streams}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to store the data from the application 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_aec74aa629558473c878b477797c77a2a}\label{class_database_aec74aa629558473c878b477797c77a2a}} 
+\index{Database@{Database}!getStreams@{getStreams}}
+\index{getStreams@{getStreams}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getStreams()}{getStreams()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ID, \mbox{\hyperlink{class_stream}{Stream}} $\ast$$>$\& Database\+::get\+Streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+A reference to the map containing the users 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a0f17105f009aac2e5fe2cc375a6ff42b}\label{class_database_a0f17105f009aac2e5fe2cc375a6ff42b}} 
+\index{Database@{Database}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{class_user}{User}} $\ast$$>$\& Database\+::get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+A reference to the map containing the users 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Database.\+h\end{DoxyCompactItemize}

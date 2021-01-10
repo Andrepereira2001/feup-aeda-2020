@@ -1,0 +1,190 @@
+\hypertarget{class_search_manager}{}\doxysection{Search\+Manager Class Reference}
+\label{class_search_manager}\index{SearchManager@{SearchManager}}
+
+
+{\ttfamily \#include $<$Search\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_search_manager_abb00958f90b44bf0834fcf70fba6acb0}{Search\+Manager}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+bool \mbox{\hyperlink{class_search_manager_a340dc9da2e1bc0edc2c0b50f57e777c4}{user\+Exists}} (std\+::string nick) const
+\item 
+bool \mbox{\hyperlink{class_search_manager_ae14cb23891715108a4d95f532e1a8e05}{stream\+Exists}} (ID stream\+ID) const
+\item 
+bool \mbox{\hyperlink{class_search_manager_ab930ed9bdfa8613f95b4ee2498454ea2}{admin\+Exists}} () const
+\item 
+\mbox{\hyperlink{class_user}{User}} $\ast$ \mbox{\hyperlink{class_search_manager_a57a415753eae038876047cdba9281689}{get\+User}} (std\+::string user\+Nick) const
+\item 
+\mbox{\hyperlink{class_stream}{Stream}} $\ast$ \mbox{\hyperlink{class_search_manager_a0fdb3c001eb28077dab173b61a1a5455}{get\+Stream}} (ID stream\+ID) const
+\item 
+void \mbox{\hyperlink{class_search_manager_a21613b4f7aa986e5a9c7b8158c4697c1}{list\+Users}} (std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ \&users, const std\+::string \&name=\char`\"{}\char`\"{}) const
+\item 
+void \mbox{\hyperlink{class_search_manager_a0b45cf0e270ef67da0af3ecef04ee9de}{list\+Allowed\+Live\+Streams}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams, std\+::string viewer\+Nick, const std\+::string \&stream\+Name=\char`\"{}\char`\"{}, const std\+::vector$<$ genre $>$ \&genres=std\+::vector$<$ genre $>$(), const std\+::vector$<$ language $>$ \&langs=std\+::vector$<$ language $>$()) const
+\item 
+void \mbox{\hyperlink{class_search_manager_a423e2e6a2adbccccb6bc081d9ad1e719}{list\+Live\+Streams}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams, const std\+::string \&stream\+Name=\char`\"{}\char`\"{}, unsigned min\+Age=V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE, const std\+::vector$<$ genre $>$ \&genres=std\+::vector$<$ genre $>$(), const std\+::vector$<$ language $>$ \&langs=std\+::vector$<$ language $>$()) const
+\item 
+void \mbox{\hyperlink{class_search_manager_a292d74076ab56a303833a49b0c930018}{list\+Live\+Streams\+By\+Streamers}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams, const std\+::vector$<$ std\+::string $>$ \&streamer\+Nick) const
+\item 
+void \mbox{\hyperlink{class_search_manager_a6676c4da4217c685c46b3ae70f8e3431}{list\+Private\+Live\+Streams}} (std\+::vector$<$ \mbox{\hyperlink{class_private_stream}{Private\+Stream}} $\ast$ $>$ \&streams) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_search_manager_a53c10e2f8529a5dbcf8a21dd4be12657}\label{class_search_manager_a53c10e2f8529a5dbcf8a21dd4be12657}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to execute search methods over the database 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_search_manager_abb00958f90b44bf0834fcf70fba6acb0}\label{class_search_manager_abb00958f90b44bf0834fcf70fba6acb0}} 
+\index{SearchManager@{SearchManager}!SearchManager@{SearchManager}}
+\index{SearchManager@{SearchManager}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{SearchManager()}{SearchManager()}}
+{\footnotesize\ttfamily Search\+Manager\+::\+Search\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\hyperlink{class_stream_z}{StreamZ}} needs to be used by the class to access the database and other methods 
+\begin{DoxyParams}{Parameters}
+{\em streamZ} & -\/ Main class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_search_manager_ab930ed9bdfa8613f95b4ee2498454ea2}\label{class_search_manager_ab930ed9bdfa8613f95b4ee2498454ea2}} 
+\index{SearchManager@{SearchManager}!adminExists@{adminExists}}
+\index{adminExists@{adminExists}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{adminExists()}{adminExists()}}
+{\footnotesize\ttfamily bool Search\+Manager\+::admin\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+If an admin account was already created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_search_manager_a0fdb3c001eb28077dab173b61a1a5455}\label{class_search_manager_a0fdb3c001eb28077dab173b61a1a5455}} 
+\index{SearchManager@{SearchManager}!getStream@{getStream}}
+\index{getStream@{getStream}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{getStream()}{getStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stream}{Stream}} $\ast$ Search\+Manager\+::get\+Stream (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+Corresponding stream to the stream\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_search_manager_a57a415753eae038876047cdba9281689}\label{class_search_manager_a57a415753eae038876047cdba9281689}} 
+\index{SearchManager@{SearchManager}!getUser@{getUser}}
+\index{getUser@{getUser}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} $\ast$ Search\+Manager\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Nick }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+Corresponding user to the nickname 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_search_manager_a0b45cf0e270ef67da0af3ecef04ee9de}\label{class_search_manager_a0b45cf0e270ef67da0af3ecef04ee9de}} 
+\index{SearchManager@{SearchManager}!listAllowedLiveStreams@{listAllowedLiveStreams}}
+\index{listAllowedLiveStreams@{listAllowedLiveStreams}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{listAllowedLiveStreams()}{listAllowedLiveStreams()}}
+{\footnotesize\ttfamily void Search\+Manager\+::list\+Allowed\+Live\+Streams (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams,  }\item[{std\+::string}]{viewer\+Nick,  }\item[{const std\+::string \&}]{stream\+Name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const std\+::vector$<$ genre $>$ \&}]{genres = {\ttfamily std\+:\+:vector$<$genre$>$()},  }\item[{const std\+::vector$<$ language $>$ \&}]{langs = {\ttfamily std\+:\+:vector$<$language$>$()} }\end{DoxyParamCaption}) const}
+
+Function to list all streams the viewer is allowed to watch 
+\begin{DoxyParams}{Parameters}
+{\em streams} & -\/ Returns by reference the vector of streams corresponding to the specified params -\/ Will be cleared if not empty \\
+\hline
+{\em stream\+Name} & -\/ Optional param specifying the name of the streams to search \\
+\hline
+{\em genres} & -\/ Optional param specifying the genre(s) of the streams to search \\
+\hline
+{\em langs} & -\/ Optional param specifying the language(s) of the streams to search \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_search_manager_a423e2e6a2adbccccb6bc081d9ad1e719}\label{class_search_manager_a423e2e6a2adbccccb6bc081d9ad1e719}} 
+\index{SearchManager@{SearchManager}!listLiveStreams@{listLiveStreams}}
+\index{listLiveStreams@{listLiveStreams}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{listLiveStreams()}{listLiveStreams()}}
+{\footnotesize\ttfamily void Search\+Manager\+::list\+Live\+Streams (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams,  }\item[{const std\+::string \&}]{stream\+Name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{unsigned}]{min\+Age = {\ttfamily VIEWER\+\_\+MIN\+\_\+AGE},  }\item[{const std\+::vector$<$ genre $>$ \&}]{genres = {\ttfamily std\+:\+:vector$<$genre$>$()},  }\item[{const std\+::vector$<$ language $>$ \&}]{langs = {\ttfamily std\+:\+:vector$<$language$>$()} }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Returns} & by reference the vector of streams corresponding to the specified params -\/ Will be cleared if not empty \\
+\hline
+{\em stream\+Name} & -\/ Optional param specifying the name of the streams to search \\
+\hline
+{\em genres} & -\/ Optional param specifying the genre(s) of the streams to search \\
+\hline
+{\em langs} & -\/ Optional param specifying the language(s) of the streams to search \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_search_manager_a292d74076ab56a303833a49b0c930018}\label{class_search_manager_a292d74076ab56a303833a49b0c930018}} 
+\index{SearchManager@{SearchManager}!listLiveStreamsByStreamers@{listLiveStreamsByStreamers}}
+\index{listLiveStreamsByStreamers@{listLiveStreamsByStreamers}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{listLiveStreamsByStreamers()}{listLiveStreamsByStreamers()}}
+{\footnotesize\ttfamily void Search\+Manager\+::list\+Live\+Streams\+By\+Streamers (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{streamer\+Nick }\end{DoxyParamCaption}) const}
+
+List live streams corresponding to some streamers Usefull to get a vector according to the following streamers of a viewer 
+\begin{DoxyParams}{Parameters}
+{\em streams} & -\/ Returns by reference the vector of livestreams from the streamers -\/ Will be cleared if not empty \\
+\hline
+{\em streamer\+ID} & -\/ Vector of streamer ID\textquotesingle{}s \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_search_manager_a6676c4da4217c685c46b3ae70f8e3431}\label{class_search_manager_a6676c4da4217c685c46b3ae70f8e3431}} 
+\index{SearchManager@{SearchManager}!listPrivateLiveStreams@{listPrivateLiveStreams}}
+\index{listPrivateLiveStreams@{listPrivateLiveStreams}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{listPrivateLiveStreams()}{listPrivateLiveStreams()}}
+{\footnotesize\ttfamily void Search\+Manager\+::list\+Private\+Live\+Streams (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_private_stream}{Private\+Stream}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption}) const}
+
+Lists all private streams 
+\begin{DoxyParams}{Parameters}
+{\em streams} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_search_manager_a21613b4f7aa986e5a9c7b8158c4697c1}\label{class_search_manager_a21613b4f7aa986e5a9c7b8158c4697c1}} 
+\index{SearchManager@{SearchManager}!listUsers@{listUsers}}
+\index{listUsers@{listUsers}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{listUsers()}{listUsers()}}
+{\footnotesize\ttfamily void Search\+Manager\+::list\+Users (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ \&}]{users,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Name of user to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of users with the specified name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_search_manager_ae14cb23891715108a4d95f532e1a8e05}\label{class_search_manager_ae14cb23891715108a4d95f532e1a8e05}} 
+\index{SearchManager@{SearchManager}!streamExists@{streamExists}}
+\index{streamExists@{streamExists}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{streamExists()}{streamExists()}}
+{\footnotesize\ttfamily bool Search\+Manager\+::stream\+Exists (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & -\/ The id of the stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If a stream with that ID exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_search_manager_a340dc9da2e1bc0edc2c0b50f57e777c4}\label{class_search_manager_a340dc9da2e1bc0edc2c0b50f57e777c4}} 
+\index{SearchManager@{SearchManager}!userExists@{userExists}}
+\index{userExists@{userExists}!SearchManager@{SearchManager}}
+\doxysubsubsection{\texorpdfstring{userExists()}{userExists()}}
+{\footnotesize\ttfamily bool Search\+Manager\+::user\+Exists (\begin{DoxyParamCaption}\item[{std\+::string}]{nick }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nick} & -\/ Nickname of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If a user with that nickname exists 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Search\+Manager.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Search\+Manager.\+cpp\end{DoxyCompactItemize}

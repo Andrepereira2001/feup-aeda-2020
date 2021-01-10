@@ -1,0 +1,7 @@
+streamer2 : 250 : 3
+osvaldo16 : 10 : 1
+streamer4 : 2 : 3
+ramiro11 : 1 : 2
+osvaldo29 : 10 : 1
+ramiro0 : 1000 : 2
+osvaldo9 : 1000 : 3

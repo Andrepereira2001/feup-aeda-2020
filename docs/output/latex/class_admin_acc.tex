@@ -1,0 +1,161 @@
+\hypertarget{class_admin_acc}{}\doxysection{Admin\+Acc Class Reference}
+\label{class_admin_acc}\index{AdminAcc@{AdminAcc}}
+
+
+{\ttfamily \#include $<$Admin\+Acc.\+h$>$}
+
+Inheritance diagram for Admin\+Acc\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_admin_acc}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_acc_aa3ac800a4839d42c73c6ef54d3e5ff93}{Admin\+Acc}} (\mbox{\hyperlink{class_user}{User}} $\ast$user, \mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_admin_acc_a021f6ec751cbea4e629da5f7bee22266}{num\+Streams\+All}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a2935acf056d92998d11209ea834ecc83}{num\+Streams}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a5bfc667a4b3cfa7443cdc3323c5a1017}{num\+Streams\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_af1e845797d2ed2732ea192a07d925c16}{views\+Per\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a017b72f0da7c95b943588165f3e7fab6}{most\+Viewed\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_aeeb438109020363ca637b26da05fa8fa}{most\+Viewed\+Streamer}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a5929b9ea17f1b6f7b2a5e7b402746bf0}{most\+Viewed\+Genre}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a63e1914dcd254207cf26a343a79d06ac}{most\+Viewed\+Language}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_ab62ad9dff35476c2b0efa0bbfb00c72c}{remove\+User}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a50a6db4f6dcdb4fa34585cf168dd1c8a}{remove\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_admin_acc_a5c440dfab1aee2f0f82b85eb6b4c6c63}{statistics}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_admin_acc_ab045a0095239b959ec4fa6ec0c0d7fa2}{get\+Time\+Interval}} (std\+::pair$<$ \mbox{\hyperlink{class_date}{Date}}, \mbox{\hyperlink{class_date}{Date}} $>$ \&date\+Interval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_admin_acc_a1b4cfd592d7fec40d8efc66557d1899e}\label{class_admin_acc_a1b4cfd592d7fec40d8efc66557d1899e}} 
+\mbox{\hyperlink{class_admin}{Admin}} $\ast$ {\bfseries admin}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_admin_acc}{Admin\+Acc}} inherited from account to handle admin account UI an IO 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_admin_acc_aa3ac800a4839d42c73c6ef54d3e5ff93}\label{class_admin_acc_aa3ac800a4839d42c73c6ef54d3e5ff93}} 
+\index{AdminAcc@{AdminAcc}!AdminAcc@{AdminAcc}}
+\index{AdminAcc@{AdminAcc}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{AdminAcc()}{AdminAcc()}}
+{\footnotesize\ttfamily Admin\+Acc\+::\+Admin\+Acc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_admin}{Admin}} \mbox{\hyperlink{class_account}{Account}} Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{class_user}{User}} class pointer \\
+\hline
+{\em streamZ} & \mbox{\hyperlink{class_stream_z}{StreamZ}} class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_acc_ab045a0095239b959ec4fa6ec0c0d7fa2}\label{class_admin_acc_ab045a0095239b959ec4fa6ec0c0d7fa2}} 
+\index{AdminAcc@{AdminAcc}!getTimeInterval@{getTimeInterval}}
+\index{getTimeInterval@{getTimeInterval}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{getTimeInterval()}{getTimeInterval()}}
+{\footnotesize\ttfamily bool Admin\+Acc\+::get\+Time\+Interval (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{class_date}{Date}}, \mbox{\hyperlink{class_date}{Date}} $>$ \&}]{date\+Interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Gets a time interval 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em date\+Interval} & interval is stored here \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool that indicates if an interval was given 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_acc_a5929b9ea17f1b6f7b2a5e7b402746bf0}\label{class_admin_acc_a5929b9ea17f1b6f7b2a5e7b402746bf0}} 
+\index{AdminAcc@{AdminAcc}!mostViewedGenre@{mostViewedGenre}}
+\index{mostViewedGenre@{mostViewedGenre}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{mostViewedGenre()}{mostViewedGenre()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::most\+Viewed\+Genre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the most viewed genre. \mbox{\Hypertarget{class_admin_acc_a63e1914dcd254207cf26a343a79d06ac}\label{class_admin_acc_a63e1914dcd254207cf26a343a79d06ac}} 
+\index{AdminAcc@{AdminAcc}!mostViewedLanguage@{mostViewedLanguage}}
+\index{mostViewedLanguage@{mostViewedLanguage}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{mostViewedLanguage()}{mostViewedLanguage()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::most\+Viewed\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the most viewed language. \mbox{\Hypertarget{class_admin_acc_aeeb438109020363ca637b26da05fa8fa}\label{class_admin_acc_aeeb438109020363ca637b26da05fa8fa}} 
+\index{AdminAcc@{AdminAcc}!mostViewedStreamer@{mostViewedStreamer}}
+\index{mostViewedStreamer@{mostViewedStreamer}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{mostViewedStreamer()}{mostViewedStreamer()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::most\+Viewed\+Streamer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the most viewed streamer. \mbox{\Hypertarget{class_admin_acc_a017b72f0da7c95b943588165f3e7fab6}\label{class_admin_acc_a017b72f0da7c95b943588165f3e7fab6}} 
+\index{AdminAcc@{AdminAcc}!mostViewedType@{mostViewedType}}
+\index{mostViewedType@{mostViewedType}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{mostViewedType()}{mostViewedType()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::most\+Viewed\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the most viewed type of stream. \mbox{\Hypertarget{class_admin_acc_a2935acf056d92998d11209ea834ecc83}\label{class_admin_acc_a2935acf056d92998d11209ea834ecc83}} 
+\index{AdminAcc@{AdminAcc}!numStreams@{numStreams}}
+\index{numStreams@{numStreams}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{numStreams()}{numStreams()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::num\+Streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lists the current number of streams. \mbox{\Hypertarget{class_admin_acc_a021f6ec751cbea4e629da5f7bee22266}\label{class_admin_acc_a021f6ec751cbea4e629da5f7bee22266}} 
+\index{AdminAcc@{AdminAcc}!numStreamsAll@{numStreamsAll}}
+\index{numStreamsAll@{numStreamsAll}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{numStreamsAll()}{numStreamsAll()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::num\+Streams\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lists the number of all streams ever created. \mbox{\Hypertarget{class_admin_acc_a5bfc667a4b3cfa7443cdc3323c5a1017}\label{class_admin_acc_a5bfc667a4b3cfa7443cdc3323c5a1017}} 
+\index{AdminAcc@{AdminAcc}!numStreamsType@{numStreamsType}}
+\index{numStreamsType@{numStreamsType}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{numStreamsType()}{numStreamsType()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::num\+Streams\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lists the number of streams of a certain type in an interval of time. \mbox{\Hypertarget{class_admin_acc_a50a6db4f6dcdb4fa34585cf168dd1c8a}\label{class_admin_acc_a50a6db4f6dcdb4fa34585cf168dd1c8a}} 
+\index{AdminAcc@{AdminAcc}!removeStream@{removeStream}}
+\index{removeStream@{removeStream}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{removeStream()}{removeStream()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::remove\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the admin to remove a stream. \mbox{\Hypertarget{class_admin_acc_ab62ad9dff35476c2b0efa0bbfb00c72c}\label{class_admin_acc_ab62ad9dff35476c2b0efa0bbfb00c72c}} 
+\index{AdminAcc@{AdminAcc}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::remove\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the admin to remove a user. \mbox{\Hypertarget{class_admin_acc_a5c440dfab1aee2f0f82b85eb6b4c6c63}\label{class_admin_acc_a5c440dfab1aee2f0f82b85eb6b4c6c63}} 
+\index{AdminAcc@{AdminAcc}!statistics@{statistics}}
+\index{statistics@{statistics}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{statistics()}{statistics()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the statistics panel. \mbox{\Hypertarget{class_admin_acc_af1e845797d2ed2732ea192a07d925c16}\label{class_admin_acc_af1e845797d2ed2732ea192a07d925c16}} 
+\index{AdminAcc@{AdminAcc}!viewsPerStream@{viewsPerStream}}
+\index{viewsPerStream@{viewsPerStream}!AdminAcc@{AdminAcc}}
+\doxysubsubsection{\texorpdfstring{viewsPerStream()}{viewsPerStream()}}
+{\footnotesize\ttfamily void Admin\+Acc\+::views\+Per\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the mean views per stream. (optional date interval exists) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Admin\+Acc.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Admin\+Acc.\+cpp\end{DoxyCompactItemize}

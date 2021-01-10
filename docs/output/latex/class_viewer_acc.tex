@@ -1,0 +1,135 @@
+\hypertarget{class_viewer_acc}{}\doxysection{Viewer\+Acc Class Reference}
+\label{class_viewer_acc}\index{ViewerAcc@{ViewerAcc}}
+
+
+{\ttfamily \#include $<$Viewer\+Acc.\+h$>$}
+
+Inheritance diagram for Viewer\+Acc\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_viewer_acc}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_viewer_acc_a92733785f4e8105e190cc1981a77f841}{Viewer\+Acc}} (\mbox{\hyperlink{class_user}{User}} $\ast$user, \mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a9e48bc359e6f3b12dd34053030296b21}{join\+Stream\+By\+Id}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a91ff8c83b403b5d67dc9c75417776f5c}{display\+Watching\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_abec57a63cc45629c02c1cdba81117498}{leave\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a3fe6783063fea6c91ccc71ebdfbfde69}{give\+Feedback}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_aba766ca70d5b3a3a75bd797ab57d49d8}{give\+Comment}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a14c02486b97318f71d945533f780061b}{find\+Stream\+Following}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a7d54a70d4aae720641f52436c944692c}{list\+Following\+Streamers}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a66e59b44f2a8ba1af28396920e0e24a5}{follow\+Streamer}} ()
+\item 
+void \mbox{\hyperlink{class_viewer_acc_a4ed5ae8816aaabb969207e97befe597d}{unfollow\+Streamer}} ()
+\item 
+\mbox{\Hypertarget{class_viewer_acc_a641da25d4990439f667e80fea038fa32}\label{class_viewer_acc_a641da25d4990439f667e80fea038fa32}} 
+void {\bfseries display\+History} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_viewer_acc_a738d5c1220ab933a535af2abc1f5dad1}\label{class_viewer_acc_a738d5c1220ab933a535af2abc1f5dad1}} 
+bool {\bfseries check\+Watching\+Private} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_viewer_acc_a4bfe928a305bb89f6d7893f049164cf8}\label{class_viewer_acc_a4bfe928a305bb89f6d7893f049164cf8}} 
+\mbox{\hyperlink{class_viewer}{Viewer}} $\ast$ {\bfseries viewer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_viewer_acc}{Viewer\+Acc}} inherited from account to handle \mbox{\hyperlink{class_viewer}{Viewer}} account UI an IO 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_viewer_acc_a92733785f4e8105e190cc1981a77f841}\label{class_viewer_acc_a92733785f4e8105e190cc1981a77f841}} 
+\index{ViewerAcc@{ViewerAcc}!ViewerAcc@{ViewerAcc}}
+\index{ViewerAcc@{ViewerAcc}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{ViewerAcc()}{ViewerAcc()}}
+{\footnotesize\ttfamily Viewer\+Acc\+::\+Viewer\+Acc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_viewer_acc}{Viewer\+Acc}} constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{class_user}{User}} class pointer \\
+\hline
+{\em \mbox{\hyperlink{class_stream_z}{StreamZ}}} & \mbox{\hyperlink{class_stream_z}{StreamZ}} class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_viewer_acc_a91ff8c83b403b5d67dc9c75417776f5c}\label{class_viewer_acc_a91ff8c83b403b5d67dc9c75417776f5c}} 
+\index{ViewerAcc@{ViewerAcc}!displayWatchingInfo@{displayWatchingInfo}}
+\index{displayWatchingInfo@{displayWatchingInfo}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{displayWatchingInfo()}{displayWatchingInfo()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::display\+Watching\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Display info about the currently watching stream. \mbox{\Hypertarget{class_viewer_acc_a14c02486b97318f71d945533f780061b}\label{class_viewer_acc_a14c02486b97318f71d945533f780061b}} 
+\index{ViewerAcc@{ViewerAcc}!findStreamFollowing@{findStreamFollowing}}
+\index{findStreamFollowing@{findStreamFollowing}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{findStreamFollowing()}{findStreamFollowing()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::find\+Stream\+Following (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the live streams of the streamers the viewer is following. \mbox{\Hypertarget{class_viewer_acc_a66e59b44f2a8ba1af28396920e0e24a5}\label{class_viewer_acc_a66e59b44f2a8ba1af28396920e0e24a5}} 
+\index{ViewerAcc@{ViewerAcc}!followStreamer@{followStreamer}}
+\index{followStreamer@{followStreamer}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{followStreamer()}{followStreamer()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::follow\+Streamer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the user to follow a streamer. \mbox{\Hypertarget{class_viewer_acc_aba766ca70d5b3a3a75bd797ab57d49d8}\label{class_viewer_acc_aba766ca70d5b3a3a75bd797ab57d49d8}} 
+\index{ViewerAcc@{ViewerAcc}!giveComment@{giveComment}}
+\index{giveComment@{giveComment}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{giveComment()}{giveComment()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::give\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the user to comment on a private stream. \mbox{\Hypertarget{class_viewer_acc_a3fe6783063fea6c91ccc71ebdfbfde69}\label{class_viewer_acc_a3fe6783063fea6c91ccc71ebdfbfde69}} 
+\index{ViewerAcc@{ViewerAcc}!giveFeedback@{giveFeedback}}
+\index{giveFeedback@{giveFeedback}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{giveFeedback()}{giveFeedback()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::give\+Feedback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the user to give a stream feedback. \mbox{\Hypertarget{class_viewer_acc_a9e48bc359e6f3b12dd34053030296b21}\label{class_viewer_acc_a9e48bc359e6f3b12dd34053030296b21}} 
+\index{ViewerAcc@{ViewerAcc}!joinStreamById@{joinStreamById}}
+\index{joinStreamById@{joinStreamById}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{joinStreamById()}{joinStreamById()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::join\+Stream\+By\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the viewer to join a stream if they have their id. \mbox{\Hypertarget{class_viewer_acc_abec57a63cc45629c02c1cdba81117498}\label{class_viewer_acc_abec57a63cc45629c02c1cdba81117498}} 
+\index{ViewerAcc@{ViewerAcc}!leaveStream@{leaveStream}}
+\index{leaveStream@{leaveStream}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{leaveStream()}{leaveStream()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::leave\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the viewer to leave the stream they are watching. \mbox{\Hypertarget{class_viewer_acc_a7d54a70d4aae720641f52436c944692c}\label{class_viewer_acc_a7d54a70d4aae720641f52436c944692c}} 
+\index{ViewerAcc@{ViewerAcc}!listFollowingStreamers@{listFollowingStreamers}}
+\index{listFollowingStreamers@{listFollowingStreamers}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{listFollowingStreamers()}{listFollowingStreamers()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::list\+Following\+Streamers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays all of the streamers the viewer is following \mbox{\Hypertarget{class_viewer_acc_a4ed5ae8816aaabb969207e97befe597d}\label{class_viewer_acc_a4ed5ae8816aaabb969207e97befe597d}} 
+\index{ViewerAcc@{ViewerAcc}!unfollowStreamer@{unfollowStreamer}}
+\index{unfollowStreamer@{unfollowStreamer}!ViewerAcc@{ViewerAcc}}
+\doxysubsubsection{\texorpdfstring{unfollowStreamer()}{unfollowStreamer()}}
+{\footnotesize\ttfamily void Viewer\+Acc\+::unfollow\+Streamer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the viewer to unfollow a streamer. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Viewer\+Acc.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Viewer\+Acc.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\hypertarget{class_finished_stream}{}\doxysection{Finished\+Stream Class Reference}
+\label{class_finished_stream}\index{FinishedStream@{FinishedStream}}
+Inheritance diagram for Finished\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_finished_stream}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_finished_stream_a1526832eb251a09889858b78f44fb0ea}{Finished\+Stream}} (std\+::string \mbox{\hyperlink{class_stream_a740de4c2b13297152661213397ae2b54}{title}}, language language, genre \mbox{\hyperlink{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}{stream\+Genre}}, int num\+Viewers, std\+::string \mbox{\hyperlink{class_stream_ad6504504b2d424b842bc018f9fc04dd4}{streamer\+Nick}}, ID stream\+ID, stream\+Type type)
+\item 
+stream\+Type \mbox{\hyperlink{class_finished_stream_ad3caed2383133f6a303f978191939b7f}{get\+Stream\+Type}} () const override
+\item 
+stream\+State \mbox{\hyperlink{class_finished_stream_a9cd5524312bc64e940be61cbb835eb0d}{get\+Stream\+State}} () const override
+\item 
+const \mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_finished_stream_aa5715b8c4d858248ef6ec505a1fe79d5}{get\+Finished\+Date}} () const
+\item 
+stream\+File\+Type \mbox{\hyperlink{class_finished_stream_ab020fb7b5fd9d5f46315d5f389bfabe2}{get\+Stream\+File\+Type}} () const override
+\item 
+unsigned int \mbox{\hyperlink{class_finished_stream_a025ada24a563d150118ac3fb7bccd44e}{get\+Num\+Viewers}} () const
+\item 
+void \mbox{\hyperlink{class_finished_stream_a0f29fc0f0dcd0fbaa085e983153bcda9}{write\+To\+File}} (std\+::ofstream \&ff) override
+\item 
+void \mbox{\hyperlink{class_finished_stream_a1796b26f71f94dd599f4be50cb1bc12d}{read\+From\+File}} (std\+::ifstream \&ff) override
+\item 
+std\+::string \mbox{\hyperlink{class_finished_stream_a88df6f6c3faebd30f13a5b729c51d0e4}{get\+Short\+Description}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_finished_stream_a7be66e5c531a6cf9501a62c8dcd6ecf5}{get\+Long\+Description}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_finished_stream_a71a0e34b3f6d39dcfd3bd92b381f0b5c}\label{class_finished_stream_a71a0e34b3f6d39dcfd3bd92b381f0b5c}} 
+\mbox{\hyperlink{class_date}{Date}} {\bfseries finished\+Date}
+\item 
+\mbox{\Hypertarget{class_finished_stream_af3d89e38fbc86c16b4c832b94b3766a2}\label{class_finished_stream_af3d89e38fbc86c16b4c832b94b3766a2}} 
+int {\bfseries num\+Viewers}
+\item 
+\mbox{\Hypertarget{class_finished_stream_adace9f556279e6cf920d1cc38b732615}\label{class_finished_stream_adace9f556279e6cf920d1cc38b732615}} 
+stream\+Type {\bfseries type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_finished_stream_a1526832eb251a09889858b78f44fb0ea}\label{class_finished_stream_a1526832eb251a09889858b78f44fb0ea}} 
+\index{FinishedStream@{FinishedStream}!FinishedStream@{FinishedStream}}
+\index{FinishedStream@{FinishedStream}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{FinishedStream()}{FinishedStream()}}
+{\footnotesize\ttfamily Finished\+Stream\+::\+Finished\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{language}]{language,  }\item[{genre}]{stream\+Genre,  }\item[{int}]{num\+Viewers,  }\item[{std\+::string}]{streamer\+Nick,  }\item[{ID}]{stream\+ID,  }\item[{stream\+Type}]{type }\end{DoxyParamCaption})}
+
+Constructor for a finished streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ Title of the streamer \\
+\hline
+{\em language} & -\/ \mbox{\hyperlink{class_stream}{Stream}} language \\
+\hline
+{\em num\+Viewers} & -\/ Number of viewers when the streamer is closed \\
+\hline
+{\em streamer\+Name} & -\/ \mbox{\hyperlink{class_streamer}{Streamer}} that had streamer the streamer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_finished_stream_aa5715b8c4d858248ef6ec505a1fe79d5}\label{class_finished_stream_aa5715b8c4d858248ef6ec505a1fe79d5}} 
+\index{FinishedStream@{FinishedStream}!getFinishedDate@{getFinishedDate}}
+\index{getFinishedDate@{getFinishedDate}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getFinishedDate()}{getFinishedDate()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_date}{Date}} \& Finished\+Stream\+::get\+Finished\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ \mbox{\hyperlink{class_date}{Date}} when the streamer end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_finished_stream_a7be66e5c531a6cf9501a62c8dcd6ecf5}\label{class_finished_stream_a7be66e5c531a6cf9501a62c8dcd6ecf5}} 
+\index{FinishedStream@{FinishedStream}!getLongDescription@{getLongDescription}}
+\index{getLongDescription@{getLongDescription}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getLongDescription()}{getLongDescription()}}
+{\footnotesize\ttfamily std\+::string Finished\+Stream\+::get\+Long\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ detailed info about stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_af051655a9566f3536879ab17a8da182c}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_a025ada24a563d150118ac3fb7bccd44e}\label{class_finished_stream_a025ada24a563d150118ac3fb7bccd44e}} 
+\index{FinishedStream@{FinishedStream}!getNumViewers@{getNumViewers}}
+\index{getNumViewers@{getNumViewers}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getNumViewers()}{getNumViewers()}}
+{\footnotesize\ttfamily unsigned int Finished\+Stream\+::get\+Num\+Viewers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ Number of viewers when stream ended 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a5422b303a23a7c27521a24c3797e1867}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_a88df6f6c3faebd30f13a5b729c51d0e4}\label{class_finished_stream_a88df6f6c3faebd30f13a5b729c51d0e4}} 
+\index{FinishedStream@{FinishedStream}!getShortDescription@{getShortDescription}}
+\index{getShortDescription@{getShortDescription}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getShortDescription()}{getShortDescription()}}
+{\footnotesize\ttfamily std\+::string Finished\+Stream\+::get\+Short\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ relevant info about stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a64cb743ffbcd6d4f6ee8e69b44e4f1ec}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_ab020fb7b5fd9d5f46315d5f389bfabe2}\label{class_finished_stream_ab020fb7b5fd9d5f46315d5f389bfabe2}} 
+\index{FinishedStream@{FinishedStream}!getStreamFileType@{getStreamFileType}}
+\index{getStreamFileType@{getStreamFileType}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getStreamFileType()}{getStreamFileType()}}
+{\footnotesize\ttfamily stream\+File\+Type Finished\+Stream\+::get\+Stream\+File\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ Used to store the stream in the file 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a8616b0fb38791493be23c986fa00f677}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_a9cd5524312bc64e940be61cbb835eb0d}\label{class_finished_stream_a9cd5524312bc64e940be61cbb835eb0d}} 
+\index{FinishedStream@{FinishedStream}!getStreamState@{getStreamState}}
+\index{getStreamState@{getStreamState}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getStreamState()}{getStreamState()}}
+{\footnotesize\ttfamily stream\+State Finished\+Stream\+::get\+Stream\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ State of the stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_af11010ae2c995cdbaf1a3dd5be827ce3}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_ad3caed2383133f6a303f978191939b7f}\label{class_finished_stream_ad3caed2383133f6a303f978191939b7f}} 
+\index{FinishedStream@{FinishedStream}!getStreamType@{getStreamType}}
+\index{getStreamType@{getStreamType}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{getStreamType()}{getStreamType()}}
+{\footnotesize\ttfamily stream\+Type Finished\+Stream\+::get\+Stream\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get type of the streamer \begin{DoxyReturn}{Returns}
+-\/ finished type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a8ccf7198447019f39c67fa625bcaa415}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_a1796b26f71f94dd599f4be50cb1bc12d}\label{class_finished_stream_a1796b26f71f94dd599f4be50cb1bc12d}} 
+\index{FinishedStream@{FinishedStream}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily void Finished\+Stream\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reading streamer info from file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stream_a06292e0b2ea0c774e6f5f4509660c5ae}{Stream}}.
+
+\mbox{\Hypertarget{class_finished_stream_a0f29fc0f0dcd0fbaa085e983153bcda9}\label{class_finished_stream_a0f29fc0f0dcd0fbaa085e983153bcda9}} 
+\index{FinishedStream@{FinishedStream}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!FinishedStream@{FinishedStream}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily void Finished\+Stream\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Writing streamer info to file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stream_a18aaa872f14c92b7663e4d6119997f64}{Stream}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Finished\+Stream.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Finished\+Stream.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_already_in_stream_exception}{}\doxysection{Already\+In\+Stream\+Exception Class Reference}
+\label{class_already_in_stream_exception}\index{AlreadyInStreamException@{AlreadyInStreamException}}
+
+
+{\ttfamily \#include $<$Already\+In\+Stream\+Exception.\+h$>$}
+
+Inheritance diagram for Already\+In\+Stream\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_already_in_stream_exception}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_already_in_stream_exception_a09c5237e5726fc511fba6a8332a961c0}{Already\+In\+Stream\+Exception}} (std\+::string user, ID stream\+Watching, bool viewer=true)
+\item 
+const char $\ast$ \mbox{\hyperlink{class_already_in_stream_exception_aea3adf8fc2868537417191da04b03c3c}{what}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_already_in_stream_exception_a22d3719f7a33c3f2d77a8db67e55e328}\label{class_already_in_stream_exception_a22d3719f7a33c3f2d77a8db67e55e328}} 
+std\+::string {\bfseries user}
+\item 
+\mbox{\Hypertarget{class_already_in_stream_exception_a3dc8f95950ad1b09c89d574ff096a162}\label{class_already_in_stream_exception_a3dc8f95950ad1b09c89d574ff096a162}} 
+ID {\bfseries curr\+Stream}
+\item 
+\mbox{\Hypertarget{class_already_in_stream_exception_aeb1d19a900083c3e9ca8d66331b7c3cc}\label{class_already_in_stream_exception_aeb1d19a900083c3e9ca8d66331b7c3cc}} 
+bool {\bfseries is\+Viewer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_already_in_stream_exception_adc708a0305be16e22fb55a27e70b78b8}\label{class_already_in_stream_exception_adc708a0305be16e22fb55a27e70b78b8}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_already_in_stream_exception}{Already\+In\+Stream\+Exception}} \&exception)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Object to be thrown when a user tries to join a streamer while watching some other 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_already_in_stream_exception_a09c5237e5726fc511fba6a8332a961c0}\label{class_already_in_stream_exception_a09c5237e5726fc511fba6a8332a961c0}} 
+\index{AlreadyInStreamException@{AlreadyInStreamException}!AlreadyInStreamException@{AlreadyInStreamException}}
+\index{AlreadyInStreamException@{AlreadyInStreamException}!AlreadyInStreamException@{AlreadyInStreamException}}
+\doxysubsubsection{\texorpdfstring{AlreadyInStreamException()}{AlreadyInStreamException()}}
+{\footnotesize\ttfamily Already\+In\+Stream\+Exception\+::\+Already\+In\+Stream\+Exception (\begin{DoxyParamCaption}\item[{std\+::string}]{user,  }\item[{ID}]{stream\+Watching,  }\item[{bool}]{viewer = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em user} & -\/ The user that originated the error \\
+\hline
+{\em curr\+Stream} & -\/ The streamer \\
+\hline
+{\em viewer} & -\/ If the user is a viewer(true) or a streamer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_already_in_stream_exception_aea3adf8fc2868537417191da04b03c3c}\label{class_already_in_stream_exception_aea3adf8fc2868537417191da04b03c3c}} 
+\index{AlreadyInStreamException@{AlreadyInStreamException}!what@{what}}
+\index{what@{what}!AlreadyInStreamException@{AlreadyInStreamException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Already\+In\+Stream\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Brief info about exception \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/streams/Already\+In\+Stream\+Exception.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Exceptions/streams/Already\+In\+Stream\+Exception.\+cpp\end{DoxyCompactItemize}

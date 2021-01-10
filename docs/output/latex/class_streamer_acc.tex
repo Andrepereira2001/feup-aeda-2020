@@ -1,0 +1,110 @@
+\hypertarget{class_streamer_acc}{}\doxysection{Streamer\+Acc Class Reference}
+\label{class_streamer_acc}\index{StreamerAcc@{StreamerAcc}}
+
+
+{\ttfamily \#include $<$Streamer\+Acc.\+h$>$}
+
+Inheritance diagram for Streamer\+Acc\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_streamer_acc}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_streamer_acc_a46286682f0e690f76ae8fec933847c4b}{Streamer\+Acc}} (\mbox{\hyperlink{class_user}{User}} $\ast$user, \mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_streamer_acc_ad7893821bf4ac1e160f8c8abdb47ef3b}{start\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_a6f65c8d7f12c6410739f8a96bc8771a3}{check\+Num\+Viewers}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_a45a77e9718cfc581d51f8d98ebc68b45}{kick\+User\+From\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_a1f2dffb9a3d8d863c86bb3a79ec10fe0}{add\+User\+To\+Private}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_aa8021848b99050c045583502c2a03858}{remove\+User\+From\+Private}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_adf3eb59de15c02aaf3db06438b7564bd}{end\+Stream}} ()
+\item 
+void \mbox{\hyperlink{class_streamer_acc_a2b7e9b99233b943efcb54df2e8e524a4}{check\+Num\+Followers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_streamer_acc_abec79d506a15da5da830bb4efc5b85c5}\label{class_streamer_acc_abec79d506a15da5da830bb4efc5b85c5}} 
+\mbox{\hyperlink{class_streamer}{Streamer}} $\ast$ {\bfseries streamer}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_streamer_acc}{Streamer\+Acc}} inherited from account to handle streamer account UI an IO 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_streamer_acc_a46286682f0e690f76ae8fec933847c4b}\label{class_streamer_acc_a46286682f0e690f76ae8fec933847c4b}} 
+\index{StreamerAcc@{StreamerAcc}!StreamerAcc@{StreamerAcc}}
+\index{StreamerAcc@{StreamerAcc}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{StreamerAcc()}{StreamerAcc()}}
+{\footnotesize\ttfamily Streamer\+Acc\+::\+Streamer\+Acc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_streamer_acc}{Streamer\+Acc}} constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{class_user}{User}} class pointer \\
+\hline
+{\em streamZ} & \mbox{\hyperlink{class_stream_z}{StreamZ}} class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_streamer_acc_a1f2dffb9a3d8d863c86bb3a79ec10fe0}\label{class_streamer_acc_a1f2dffb9a3d8d863c86bb3a79ec10fe0}} 
+\index{StreamerAcc@{StreamerAcc}!addUserToPrivate@{addUserToPrivate}}
+\index{addUserToPrivate@{addUserToPrivate}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{addUserToPrivate()}{addUserToPrivate()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::add\+User\+To\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the streamer to add a user to a private stream. \mbox{\Hypertarget{class_streamer_acc_a2b7e9b99233b943efcb54df2e8e524a4}\label{class_streamer_acc_a2b7e9b99233b943efcb54df2e8e524a4}} 
+\index{StreamerAcc@{StreamerAcc}!checkNumFollowers@{checkNumFollowers}}
+\index{checkNumFollowers@{checkNumFollowers}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{checkNumFollowers()}{checkNumFollowers()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::check\+Num\+Followers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the number of followers \mbox{\Hypertarget{class_streamer_acc_a6f65c8d7f12c6410739f8a96bc8771a3}\label{class_streamer_acc_a6f65c8d7f12c6410739f8a96bc8771a3}} 
+\index{StreamerAcc@{StreamerAcc}!checkNumViewers@{checkNumViewers}}
+\index{checkNumViewers@{checkNumViewers}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{checkNumViewers()}{checkNumViewers()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::check\+Num\+Viewers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the number of viewers of the stream; \mbox{\Hypertarget{class_streamer_acc_adf3eb59de15c02aaf3db06438b7564bd}\label{class_streamer_acc_adf3eb59de15c02aaf3db06438b7564bd}} 
+\index{StreamerAcc@{StreamerAcc}!endStream@{endStream}}
+\index{endStream@{endStream}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{endStream()}{endStream()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::end\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the streamer to end a stream. \mbox{\Hypertarget{class_streamer_acc_a45a77e9718cfc581d51f8d98ebc68b45}\label{class_streamer_acc_a45a77e9718cfc581d51f8d98ebc68b45}} 
+\index{StreamerAcc@{StreamerAcc}!kickUserFromStream@{kickUserFromStream}}
+\index{kickUserFromStream@{kickUserFromStream}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{kickUserFromStream()}{kickUserFromStream()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::kick\+User\+From\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the streamer to kick a user from their stream. \mbox{\Hypertarget{class_streamer_acc_aa8021848b99050c045583502c2a03858}\label{class_streamer_acc_aa8021848b99050c045583502c2a03858}} 
+\index{StreamerAcc@{StreamerAcc}!removeUserFromPrivate@{removeUserFromPrivate}}
+\index{removeUserFromPrivate@{removeUserFromPrivate}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{removeUserFromPrivate()}{removeUserFromPrivate()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::remove\+User\+From\+Private (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the streamer to remove a user from private stream. \mbox{\Hypertarget{class_streamer_acc_ad7893821bf4ac1e160f8c8abdb47ef3b}\label{class_streamer_acc_ad7893821bf4ac1e160f8c8abdb47ef3b}} 
+\index{StreamerAcc@{StreamerAcc}!startStream@{startStream}}
+\index{startStream@{startStream}!StreamerAcc@{StreamerAcc}}
+\doxysubsubsection{\texorpdfstring{startStream()}{startStream()}}
+{\footnotesize\ttfamily void Streamer\+Acc\+::start\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prompts the streamer to start a stream. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Streamer\+Acc.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Streamer\+Acc.\+cpp\end{DoxyCompactItemize}

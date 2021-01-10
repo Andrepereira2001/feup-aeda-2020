@@ -1,0 +1,253 @@
+\hypertarget{class_admin_ops}{}\doxysection{Admin\+Ops Class Reference}
+\label{class_admin_ops}\index{AdminOps@{AdminOps}}
+
+
+{\ttfamily \#include $<$Admin\+Ops.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_ops_acbcde90f3a878331afec12a368b85471}{Admin\+Ops}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+\mbox{\hyperlink{class_streamer}{Streamer}} $\ast$ \mbox{\hyperlink{class_admin_ops_a97d2c3bac82e4ed1ca41a468bee57efd}{most\+Viewed}} ()
+\item 
+language \mbox{\hyperlink{class_admin_ops_afe58e66130eaea59d3d778518494dea8}{rank\+Views\+Lang}} (bool reversed=false)
+\item 
+genre \mbox{\hyperlink{class_admin_ops_a7c0b82063d397a708b3bc34589d00b37}{rank\+Views\+Genres}} (bool reversed=false)
+\item 
+stream\+Type \mbox{\hyperlink{class_admin_ops_a8d01ef1886c55262feccf60459b187db}{rank\+Views\+Types}} (bool reversed=false)
+\item 
+float \mbox{\hyperlink{class_admin_ops_ae8290ae654c2498ea0ab78fda75e2d0f}{median\+Views\+Stream}} ()
+\item 
+\mbox{\Hypertarget{class_admin_ops_a540ea3c363cc977545261d50ed04e7c0}\label{class_admin_ops_a540ea3c363cc977545261d50ed04e7c0}} 
+float {\bfseries median\+Views\+Stream} (\mbox{\hyperlink{class_date}{Date}} d1, \mbox{\hyperlink{class_date}{Date}} d2)
+\item 
+long int \mbox{\hyperlink{class_admin_ops_aaf8880f56bb1b9cb2f6f2532dba7ef00}{num\+Streams\+All}} ()
+\item 
+long int \mbox{\hyperlink{class_admin_ops_af7c4e45eb46cb9198b21efd8e276ff9f}{num\+Streams}} (bool active\+Str=true)
+\item 
+long int \mbox{\hyperlink{class_admin_ops_a6edea4ca8a71bf037992bd6a9200ece0}{num\+Streams}} (stream\+Type stream\+Type)
+\item 
+long int \mbox{\hyperlink{class_admin_ops_a65ea636489bcdf6a1d319d893f6aa83a}{num\+Streams}} (\mbox{\hyperlink{class_date}{Date}} d1, \mbox{\hyperlink{class_date}{Date}} d2)
+\item 
+long int \mbox{\hyperlink{class_admin_ops_a95792a4742644d0567c953166a74aadb}{num\+Streams}} (stream\+Type stream\+Type, \mbox{\hyperlink{class_date}{Date}} d1, \mbox{\hyperlink{class_date}{Date}} d2)
+\item 
+void \mbox{\hyperlink{class_admin_ops_af300ff045bcbd619ea5869e7dc29da64}{remove\+User}} (std\+::string nick\+Name)
+\item 
+void \mbox{\hyperlink{class_admin_ops_a98514a63e8d83e8a2edcb1e92b4fa20e}{remove\+Stream}} (ID stream\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_admin_ops_afa997acf8932a9a02c826be250a8c7ef}\label{class_admin_ops_afa997acf8932a9a02c826be250a8c7ef}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to execute admin methods 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_admin_ops_acbcde90f3a878331afec12a368b85471}\label{class_admin_ops_acbcde90f3a878331afec12a368b85471}} 
+\index{AdminOps@{AdminOps}!AdminOps@{AdminOps}}
+\index{AdminOps@{AdminOps}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{AdminOps()}{AdminOps()}}
+{\footnotesize\ttfamily Admin\+Ops\+::\+Admin\+Ops (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\hyperlink{class_stream_z}{StreamZ}} needs to be used by the class to access the database and other methods 
+\begin{DoxyParams}{Parameters}
+{\em streamZ} & -\/ Main class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_ops_ae8290ae654c2498ea0ab78fda75e2d0f}\label{class_admin_ops_ae8290ae654c2498ea0ab78fda75e2d0f}} 
+\index{AdminOps@{AdminOps}!medianViewsStream@{medianViewsStream}}
+\index{medianViewsStream@{medianViewsStream}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{medianViewsStream()}{medianViewsStream()}}
+{\footnotesize\ttfamily float Admin\+Ops\+::median\+Views\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The median views per stream 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a97d2c3bac82e4ed1ca41a468bee57efd}\label{class_admin_ops_a97d2c3bac82e4ed1ca41a468bee57efd}} 
+\index{AdminOps@{AdminOps}!mostViewed@{mostViewed}}
+\index{mostViewed@{mostViewed}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{mostViewed()}{mostViewed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_streamer}{Streamer}} $\ast$ Admin\+Ops\+::most\+Viewed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Empty\+Database} & if the custom search doesn\textquotesingle{}t find anything \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Pointer to the most viewed streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_af7c4e45eb46cb9198b21efd8e276ff9f}\label{class_admin_ops_af7c4e45eb46cb9198b21efd8e276ff9f}} 
+\index{AdminOps@{AdminOps}!numStreams@{numStreams}}
+\index{numStreams@{numStreams}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{numStreams()}{numStreams()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily long int Admin\+Ops\+::num\+Streams (\begin{DoxyParamCaption}\item[{bool}]{active\+Str = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns the number of active (or inactive) streams in the system 
+\begin{DoxyParams}{Parameters}
+{\em public\+Str} & -\/ Option\+: Indicates if wants the count of active or inactive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a65ea636489bcdf6a1d319d893f6aa83a}\label{class_admin_ops_a65ea636489bcdf6a1d319d893f6aa83a}} 
+\index{AdminOps@{AdminOps}!numStreams@{numStreams}}
+\index{numStreams@{numStreams}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{numStreams()}{numStreams()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily long int Admin\+Ops\+::num\+Streams (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}}}]{d1,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{d2 }\end{DoxyParamCaption})}
+
+Number of streams between the specified dates 
+\begin{DoxyParams}{Parameters}
+{\em d1} & -\/ Smaller date \\
+\hline
+{\em d2} & -\/ Bigger date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of streams 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a6edea4ca8a71bf037992bd6a9200ece0}\label{class_admin_ops_a6edea4ca8a71bf037992bd6a9200ece0}} 
+\index{AdminOps@{AdminOps}!numStreams@{numStreams}}
+\index{numStreams@{numStreams}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{numStreams()}{numStreams()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily long int Admin\+Ops\+::num\+Streams (\begin{DoxyParamCaption}\item[{stream\+Type}]{stream\+Type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+Type} & -\/ The specific type (public, private or finished) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of streams of the specified type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a95792a4742644d0567c953166a74aadb}\label{class_admin_ops_a95792a4742644d0567c953166a74aadb}} 
+\index{AdminOps@{AdminOps}!numStreams@{numStreams}}
+\index{numStreams@{numStreams}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{numStreams()}{numStreams()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily long int Admin\+Ops\+::num\+Streams (\begin{DoxyParamCaption}\item[{stream\+Type}]{stream\+Type,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{d1,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{d2 }\end{DoxyParamCaption})}
+
+Number of streams between the specified dates of the specified type 
+\begin{DoxyParams}{Parameters}
+{\em stream\+Type} & -\/ The specific type (public, private or finished) \\
+\hline
+{\em d1} & -\/ Smaller date \\
+\hline
+{\em d2} & -\/ Bigger date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_aaf8880f56bb1b9cb2f6f2532dba7ef00}\label{class_admin_ops_aaf8880f56bb1b9cb2f6f2532dba7ef00}} 
+\index{AdminOps@{AdminOps}!numStreamsAll@{numStreamsAll}}
+\index{numStreamsAll@{numStreamsAll}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{numStreamsAll()}{numStreamsAll()}}
+{\footnotesize\ttfamily long int Admin\+Ops\+::num\+Streams\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The number of all of the streams ever created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a7c0b82063d397a708b3bc34589d00b37}\label{class_admin_ops_a7c0b82063d397a708b3bc34589d00b37}} 
+\index{AdminOps@{AdminOps}!rankViewsGenres@{rankViewsGenres}}
+\index{rankViewsGenres@{rankViewsGenres}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{rankViewsGenres()}{rankViewsGenres()}}
+{\footnotesize\ttfamily genre Admin\+Ops\+::rank\+Views\+Genres (\begin{DoxyParamCaption}\item[{bool}]{reversed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reversed} & -\/ Optional\+: Set to true if you want the least viewed genre \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Empty\+Database} & if the custom search doesn\textquotesingle{}t find anything \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Most viewed genre among streams ( enum genre) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_afe58e66130eaea59d3d778518494dea8}\label{class_admin_ops_afe58e66130eaea59d3d778518494dea8}} 
+\index{AdminOps@{AdminOps}!rankViewsLang@{rankViewsLang}}
+\index{rankViewsLang@{rankViewsLang}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{rankViewsLang()}{rankViewsLang()}}
+{\footnotesize\ttfamily language Admin\+Ops\+::rank\+Views\+Lang (\begin{DoxyParamCaption}\item[{bool}]{reversed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reversed} & -\/ Optional\+: Set to true if you want the least viewed language \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Empty\+Database} & if the custom search doesn\textquotesingle{}t find anything \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Most viewed language among streams ( enum language) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a8d01ef1886c55262feccf60459b187db}\label{class_admin_ops_a8d01ef1886c55262feccf60459b187db}} 
+\index{AdminOps@{AdminOps}!rankViewsTypes@{rankViewsTypes}}
+\index{rankViewsTypes@{rankViewsTypes}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{rankViewsTypes()}{rankViewsTypes()}}
+{\footnotesize\ttfamily stream\+Type Admin\+Ops\+::rank\+Views\+Types (\begin{DoxyParamCaption}\item[{bool}]{reversed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reversed} & -\/ Optional\+: Set to true if you want the least viewed genre \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Empty\+Database} & if the custom search doesn\textquotesingle{}t find anything \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Most viewed genre among streams ( enum genre) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_admin_ops_a98514a63e8d83e8a2edcb1e92b4fa20e}\label{class_admin_ops_a98514a63e8d83e8a2edcb1e92b4fa20e}} 
+\index{AdminOps@{AdminOps}!removeStream@{removeStream}}
+\index{removeStream@{removeStream}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{removeStream()}{removeStream()}}
+{\footnotesize\ttfamily void Admin\+Ops\+::remove\+Stream (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption})}
+
+Removes a streamer 
+\begin{DoxyExceptions}{Exceptions}
+{\em Does\+Not\+Exist$<$\+I\+D$>$} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & ID of the streamer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_admin_ops_af300ff045bcbd619ea5869e7dc29da64}\label{class_admin_ops_af300ff045bcbd619ea5869e7dc29da64}} 
+\index{AdminOps@{AdminOps}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!AdminOps@{AdminOps}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily void Admin\+Ops\+::remove\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{nick\+Name }\end{DoxyParamCaption})}
+
+Removes a user 
+\begin{DoxyExceptions}{Exceptions}
+{\em Does\+Not\+Exist$<$std\+::string$>$} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em nick\+Name} & Nickname of the user \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Admin\+Ops.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Admin\+Ops.\+cpp\end{DoxyCompactItemize}

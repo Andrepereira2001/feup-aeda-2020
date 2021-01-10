@@ -1,0 +1,285 @@
+\hypertarget{class_private_stream}{}\doxysection{Private\+Stream Class Reference}
+\label{class_private_stream}\index{PrivateStream@{PrivateStream}}
+Inheritance diagram for Private\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_private_stream}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_private_stream_a0a9a82b77419ca5cf61f916dea3e2ffa}{Private\+Stream}} (std\+::string \mbox{\hyperlink{class_stream_a740de4c2b13297152661213397ae2b54}{title}}, language \mbox{\hyperlink{class_stream_a3b877e58d52f752102a2fa5068c95dd5}{stream\+Language}}, genre \mbox{\hyperlink{class_stream_a0983f5a370b89e3612e9cdd4a559fc92}{stream\+Genre}}, std\+::string \mbox{\hyperlink{class_stream_ad6504504b2d424b842bc018f9fc04dd4}{streamer\+Nick}}, unsigned \mbox{\hyperlink{class_live_stream_a73f826a757b582ff2fe3f549da076f77}{min\+Age}}=V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE, unsigned \mbox{\hyperlink{class_private_stream_a1f375cc3c1db642474aa1432e86f2f08}{max\+Viewers}}=M\+A\+X\+\_\+\+V\+I\+E\+W\+E\+RS)
+\item 
+unsigned \mbox{\hyperlink{class_private_stream_ab986cdac897e1ce974d1839abf307f17}{get\+Number\+Comments}} ()
+\item 
+stream\+Type \mbox{\hyperlink{class_private_stream_a7d2b9af792d04711c3594571aa69e634}{get\+Stream\+Type}} () const override
+\item 
+stream\+File\+Type \mbox{\hyperlink{class_private_stream_a8e14a69d2f20ac0518581f240aa92c1b}{get\+Stream\+File\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_private_stream_ae33a85754bc612aec4420ea9590600bb}{add\+Valid\+User}} (const std\+::string \&user\+Nick)
+\item 
+void \mbox{\hyperlink{class_private_stream_af50624a4e17bea49b625068fa8cf301e}{kick\+Valid\+User}} (const std\+::string \&user\+Nick)
+\item 
+void \mbox{\hyperlink{class_private_stream_a3ac468849819f18b6d7cc602b7aeec08}{remove\+User\+From\+Whitelist}} (const std\+::string \&user\+Nick)
+\item 
+bool \mbox{\hyperlink{class_private_stream_a087dc2be9281317cb766943c9e6a8b3e}{is\+Valid\+User}} (const std\+::string \&user\+Nick)
+\item 
+int \mbox{\hyperlink{class_private_stream_a9d1660d75c96735157271df7f08bfd66}{get\+Whitelist\+Size}} () const
+\item 
+void \mbox{\hyperlink{class_private_stream_a950377d13c1af777675530ad9ab0ebf9}{add\+Comment}} (const std\+::string \&text, const std\+::string \&user\+Nick)
+\item 
+unsigned int \mbox{\hyperlink{class_private_stream_af61a9b3bf24cac8c9c07f9af0a2aa95f}{get\+Max\+Viewers}} () const
+\item 
+void \mbox{\hyperlink{class_private_stream_ab4197d2c3b7b073a0560af640c6a3050}{add\+Viewer}} (const std\+::string \&viewer\+Nick)
+\item 
+void \mbox{\hyperlink{class_private_stream_a9dd860cee060fb87d5178a35039cb6d7}{read\+From\+File}} (std\+::ifstream \&ff) override
+\item 
+void \mbox{\hyperlink{class_private_stream_ab70606a27c10162bf479dc8bc874bc2c}{write\+To\+File}} (std\+::ofstream \&ff) override
+\item 
+std\+::string \mbox{\hyperlink{class_private_stream_a9e152e4f7d8d464f22ee5e7c1930f2af}{get\+Short\+Description}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_private_stream_a269319755cd045d68d3b6f08d407d566}{get\+Long\+Description}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_private_stream_a304d445efc15522ff910f78df1f97199}\label{class_private_stream_a304d445efc15522ff910f78df1f97199}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_comment}{Comment}} $>$ \mbox{\hyperlink{class_private_stream_a304d445efc15522ff910f78df1f97199}{comments}}
+\begin{DoxyCompactList}\small\item\em vector that have all the comments made for the streamer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_private_stream_afa0cb09ce2585710e70cd56887d2b832}\label{class_private_stream_afa0cb09ce2585710e70cd56887d2b832}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_private_stream_afa0cb09ce2585710e70cd56887d2b832}{whitelist}}
+\begin{DoxyCompactList}\small\item\em Valid nick names to enter de streamer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_private_stream_a1f375cc3c1db642474aa1432e86f2f08}\label{class_private_stream_a1f375cc3c1db642474aa1432e86f2f08}} 
+unsigned int \mbox{\hyperlink{class_private_stream_a1f375cc3c1db642474aa1432e86f2f08}{max\+Viewers}}
+\begin{DoxyCompactList}\small\item\em Max number of viewers of the streamer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_private_stream_a0a9a82b77419ca5cf61f916dea3e2ffa}\label{class_private_stream_a0a9a82b77419ca5cf61f916dea3e2ffa}} 
+\index{PrivateStream@{PrivateStream}!PrivateStream@{PrivateStream}}
+\index{PrivateStream@{PrivateStream}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{PrivateStream()}{PrivateStream()}}
+{\footnotesize\ttfamily Private\+Stream\+::\+Private\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{language}]{stream\+Language,  }\item[{genre}]{stream\+Genre,  }\item[{std\+::string}]{streamer\+Nick,  }\item[{unsigned}]{min\+Age = {\ttfamily VIEWER\+\_\+MIN\+\_\+AGE},  }\item[{unsigned}]{max\+Viewers = {\ttfamily MAX\+\_\+VIEWERS} }\end{DoxyParamCaption})}
+
+Constructor to private streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & -\/ Title of the streamer \\
+\hline
+{\em language} & -\/ \mbox{\hyperlink{class_stream}{Stream}} language \\
+\hline
+{\em min\+Age} & -\/ Minimal age of the streamer , 12 by default \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_private_stream_a950377d13c1af777675530ad9ab0ebf9}\label{class_private_stream_a950377d13c1af777675530ad9ab0ebf9}} 
+\index{PrivateStream@{PrivateStream}!addComment@{addComment}}
+\index{addComment@{addComment}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{addComment()}{addComment()}}
+{\footnotesize\ttfamily void Private\+Stream\+::add\+Comment (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const std\+::string \&}]{user\+Nick }\end{DoxyParamCaption})}
+
+save a comment in the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & -\/ text that the user write \\
+\hline
+{\em viewer} & -\/ viewer that make the comment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_private_stream_ae33a85754bc612aec4420ea9590600bb}\label{class_private_stream_ae33a85754bc612aec4420ea9590600bb}} 
+\index{PrivateStream@{PrivateStream}!addValidUser@{addValidUser}}
+\index{addValidUser@{addValidUser}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{addValidUser()}{addValidUser()}}
+{\footnotesize\ttfamily void Private\+Stream\+::add\+Valid\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Nick }\end{DoxyParamCaption})}
+
+Function to add a user to a whitelisted streamer 
+\begin{DoxyParams}{Parameters}
+{\em user\+Nick} & -\/ nick of user to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_private_stream_ab4197d2c3b7b073a0560af640c6a3050}\label{class_private_stream_ab4197d2c3b7b073a0560af640c6a3050}} 
+\index{PrivateStream@{PrivateStream}!addViewer@{addViewer}}
+\index{addViewer@{addViewer}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{addViewer()}{addViewer()}}
+{\footnotesize\ttfamily void Private\+Stream\+::add\+Viewer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{viewer\+Nick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add viewers to the streamer
+
+
+\begin{DoxyParams}{Parameters}
+{\em viewer\+Nick} & -\/ Nick name of the viewer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_live_stream_ad3d49a01baefcd6a5ca9dba6f31a733b}{Live\+Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_a269319755cd045d68d3b6f08d407d566}\label{class_private_stream_a269319755cd045d68d3b6f08d407d566}} 
+\index{PrivateStream@{PrivateStream}!getLongDescription@{getLongDescription}}
+\index{getLongDescription@{getLongDescription}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getLongDescription()}{getLongDescription()}}
+{\footnotesize\ttfamily std\+::string Private\+Stream\+::get\+Long\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ detailed info about streamer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_af051655a9566f3536879ab17a8da182c}{Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_af61a9b3bf24cac8c9c07f9af0a2aa95f}\label{class_private_stream_af61a9b3bf24cac8c9c07f9af0a2aa95f}} 
+\index{PrivateStream@{PrivateStream}!getMaxViewers@{getMaxViewers}}
+\index{getMaxViewers@{getMaxViewers}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getMaxViewers()}{getMaxViewers()}}
+{\footnotesize\ttfamily unsigned int Private\+Stream\+::get\+Max\+Viewers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+-\/ max numbers of viewers that may be in the streamer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_private_stream_ab986cdac897e1ce974d1839abf307f17}\label{class_private_stream_ab986cdac897e1ce974d1839abf307f17}} 
+\index{PrivateStream@{PrivateStream}!getNumberComments@{getNumberComments}}
+\index{getNumberComments@{getNumberComments}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getNumberComments()}{getNumberComments()}}
+{\footnotesize\ttfamily unsigned Private\+Stream\+::get\+Number\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+-\/ number of comments that the streamer have 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_private_stream_a9e152e4f7d8d464f22ee5e7c1930f2af}\label{class_private_stream_a9e152e4f7d8d464f22ee5e7c1930f2af}} 
+\index{PrivateStream@{PrivateStream}!getShortDescription@{getShortDescription}}
+\index{getShortDescription@{getShortDescription}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getShortDescription()}{getShortDescription()}}
+{\footnotesize\ttfamily std\+::string Private\+Stream\+::get\+Short\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ relevant info about streamer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a64cb743ffbcd6d4f6ee8e69b44e4f1ec}{Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_a8e14a69d2f20ac0518581f240aa92c1b}\label{class_private_stream_a8e14a69d2f20ac0518581f240aa92c1b}} 
+\index{PrivateStream@{PrivateStream}!getStreamFileType@{getStreamFileType}}
+\index{getStreamFileType@{getStreamFileType}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getStreamFileType()}{getStreamFileType()}}
+{\footnotesize\ttfamily stream\+File\+Type Private\+Stream\+::get\+Stream\+File\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ Used to store the stream in the file 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_stream_a8616b0fb38791493be23c986fa00f677}{Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_a7d2b9af792d04711c3594571aa69e634}\label{class_private_stream_a7d2b9af792d04711c3594571aa69e634}} 
+\index{PrivateStream@{PrivateStream}!getStreamType@{getStreamType}}
+\index{getStreamType@{getStreamType}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getStreamType()}{getStreamType()}}
+{\footnotesize\ttfamily stream\+Type Private\+Stream\+::get\+Stream\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+-\/ streamer type = private type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_live_stream_a63e5b987c8de5d5ebdc826dbaf2e8b1a}{Live\+Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_a9d1660d75c96735157271df7f08bfd66}\label{class_private_stream_a9d1660d75c96735157271df7f08bfd66}} 
+\index{PrivateStream@{PrivateStream}!getWhitelistSize@{getWhitelistSize}}
+\index{getWhitelistSize@{getWhitelistSize}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{getWhitelistSize()}{getWhitelistSize()}}
+{\footnotesize\ttfamily int Private\+Stream\+::get\+Whitelist\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+Number of whitelisted viewers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_private_stream_a087dc2be9281317cb766943c9e6a8b3e}\label{class_private_stream_a087dc2be9281317cb766943c9e6a8b3e}} 
+\index{PrivateStream@{PrivateStream}!isValidUser@{isValidUser}}
+\index{isValidUser@{isValidUser}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{isValidUser()}{isValidUser()}}
+{\footnotesize\ttfamily bool Private\+Stream\+::is\+Valid\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Nick }\end{DoxyParamCaption})}
+
+Checks if the user is in the vector of valid users
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Nick} & -\/ nick of user to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true if it is, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_private_stream_af50624a4e17bea49b625068fa8cf301e}\label{class_private_stream_af50624a4e17bea49b625068fa8cf301e}} 
+\index{PrivateStream@{PrivateStream}!kickValidUser@{kickValidUser}}
+\index{kickValidUser@{kickValidUser}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{kickValidUser()}{kickValidUser()}}
+{\footnotesize\ttfamily void Private\+Stream\+::kick\+Valid\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Nick }\end{DoxyParamCaption})}
+
+Function to remove a user from the stream whitelist and kick him from the stream 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_not_in_stream_exception}{Not\+In\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Nick} & -\/ nick of user to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_private_stream_a9dd860cee060fb87d5178a35039cb6d7}\label{class_private_stream_a9dd860cee060fb87d5178a35039cb6d7}} 
+\index{PrivateStream@{PrivateStream}!readFromFile@{readFromFile}}
+\index{readFromFile@{readFromFile}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{readFromFile()}{readFromFile()}}
+{\footnotesize\ttfamily void Private\+Stream\+::read\+From\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Writing streamer info to file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_live_stream_a5b1f3625fd4d5aa010b786bad496e4ef}{Live\+Stream}}.
+
+\mbox{\Hypertarget{class_private_stream_a3ac468849819f18b6d7cc602b7aeec08}\label{class_private_stream_a3ac468849819f18b6d7cc602b7aeec08}} 
+\index{PrivateStream@{PrivateStream}!removeUserFromWhitelist@{removeUserFromWhitelist}}
+\index{removeUserFromWhitelist@{removeUserFromWhitelist}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{removeUserFromWhitelist()}{removeUserFromWhitelist()}}
+{\footnotesize\ttfamily void Private\+Stream\+::remove\+User\+From\+Whitelist (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Nick }\end{DoxyParamCaption})}
+
+Function to remove a user from the stream whitelist 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_not_in_stream_exception}{Not\+In\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Nick} & -\/ nick of user to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_private_stream_ab70606a27c10162bf479dc8bc874bc2c}\label{class_private_stream_ab70606a27c10162bf479dc8bc874bc2c}} 
+\index{PrivateStream@{PrivateStream}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!PrivateStream@{PrivateStream}}
+\doxysubsubsection{\texorpdfstring{writeToFile()}{writeToFile()}}
+{\footnotesize\ttfamily void Private\+Stream\+::write\+To\+File (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{ff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Writing streamer info from file 
+\begin{DoxyParams}{Parameters}
+{\em ff} & Current file streamer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_live_stream_a6131ff59c0bafd46534654c8537e582f}{Live\+Stream}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Private\+Stream.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Streams/Private\+Stream.\+cpp\end{DoxyCompactItemize}

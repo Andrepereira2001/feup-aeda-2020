@@ -1,0 +1,95 @@
+\hypertarget{class_leader_board}{}\doxysection{Leader\+Board Class Reference}
+\label{class_leader_board}\index{LeaderBoard@{LeaderBoard}}
+
+
+{\ttfamily \#include $<$Leader\+Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_leader_board_a3ebf747e1c3b7d440b60603fcf437aff}{Leader\+Board}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_leader_board_a42559622c140572b307407097837fb3c}{top10\+Stream\+Views}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams) const
+\item 
+void \mbox{\hyperlink{class_leader_board_a1f1461882305a6eb73f1c65de6488e7b}{top10\+Stream\+Likes}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams) const
+\item 
+void \mbox{\hyperlink{class_leader_board_ad84413cf0b2548305eef578e30eda0b8}{top10\+Stream\+Comments}} (std\+::vector$<$ \mbox{\hyperlink{class_private_stream}{Private\+Stream}} $\ast$ $>$ \&streams) const
+\item 
+void \mbox{\hyperlink{class_leader_board_a89d537d92a77064fa9818b5a0b0c040f}{top10oldest\+Users\+Plat}} (std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ \&streams) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_leader_board_a653df178a4645b760c6474576193bb38}\label{class_leader_board_a653df178a4645b760c6474576193bb38}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to execute leaderboard related commands 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_leader_board_a3ebf747e1c3b7d440b60603fcf437aff}\label{class_leader_board_a3ebf747e1c3b7d440b60603fcf437aff}} 
+\index{LeaderBoard@{LeaderBoard}!LeaderBoard@{LeaderBoard}}
+\index{LeaderBoard@{LeaderBoard}!LeaderBoard@{LeaderBoard}}
+\doxysubsubsection{\texorpdfstring{LeaderBoard()}{LeaderBoard()}}
+{\footnotesize\ttfamily Leader\+Board\+::\+Leader\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. \mbox{\hyperlink{class_stream_z}{StreamZ}} needs to be used by the class to access the database and other methods 
+\begin{DoxyParams}{Parameters}
+{\em streamZ} & -\/ Main class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_leader_board_a89d537d92a77064fa9818b5a0b0c040f}\label{class_leader_board_a89d537d92a77064fa9818b5a0b0c040f}} 
+\index{LeaderBoard@{LeaderBoard}!top10oldestUsersPlat@{top10oldestUsersPlat}}
+\index{top10oldestUsersPlat@{top10oldestUsersPlat}!LeaderBoard@{LeaderBoard}}
+\doxysubsubsection{\texorpdfstring{top10oldestUsersPlat()}{top10oldestUsersPlat()}}
+{\footnotesize\ttfamily void Leader\+Board\+::top10oldest\+Users\+Plat (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_user}{User}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Returns} & by reference Vector of users pointers containing the top 10 oldest users in the platform (by time joined) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_leader_board_ad84413cf0b2548305eef578e30eda0b8}\label{class_leader_board_ad84413cf0b2548305eef578e30eda0b8}} 
+\index{LeaderBoard@{LeaderBoard}!top10StreamComments@{top10StreamComments}}
+\index{top10StreamComments@{top10StreamComments}!LeaderBoard@{LeaderBoard}}
+\doxysubsubsection{\texorpdfstring{top10StreamComments()}{top10StreamComments()}}
+{\footnotesize\ttfamily void Leader\+Board\+::top10\+Stream\+Comments (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_private_stream}{Private\+Stream}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Returns} & by reference Vector of stream pointers containing the top 10 streams according to the number of comments (private streams only) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_leader_board_a1f1461882305a6eb73f1c65de6488e7b}\label{class_leader_board_a1f1461882305a6eb73f1c65de6488e7b}} 
+\index{LeaderBoard@{LeaderBoard}!top10StreamLikes@{top10StreamLikes}}
+\index{top10StreamLikes@{top10StreamLikes}!LeaderBoard@{LeaderBoard}}
+\doxysubsubsection{\texorpdfstring{top10StreamLikes()}{top10StreamLikes()}}
+{\footnotesize\ttfamily void Leader\+Board\+::top10\+Stream\+Likes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Returns} & by reference Vector of stream pointers containing the top 10 streams according to the number of likes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_leader_board_a42559622c140572b307407097837fb3c}\label{class_leader_board_a42559622c140572b307407097837fb3c}} 
+\index{LeaderBoard@{LeaderBoard}!top10StreamViews@{top10StreamViews}}
+\index{top10StreamViews@{top10StreamViews}!LeaderBoard@{LeaderBoard}}
+\doxysubsubsection{\texorpdfstring{top10StreamViews()}{top10StreamViews()}}
+{\footnotesize\ttfamily void Leader\+Board\+::top10\+Stream\+Views (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Returns} & by reference Vector of stream pointers containing the top 10 streams according to the number of views \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Leader\+Board.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Leader\+Board.\+cpp\end{DoxyCompactItemize}

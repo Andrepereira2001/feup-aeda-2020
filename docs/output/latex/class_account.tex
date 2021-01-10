@@ -1,0 +1,223 @@
+\hypertarget{class_account}{}\doxysection{Account Class Reference}
+\label{class_account}\index{Account@{Account}}
+
+
+{\ttfamily \#include $<$Account.\+h$>$}
+
+Inheritance diagram for Account\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_account}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_account_a52a50d1f6aa1e2f573c25a4a1e548ff2}{Account}} (\mbox{\hyperlink{class_user}{User}} $\ast$user, \mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+void \mbox{\hyperlink{class_account_a8a5be6d00ef80f29776ec45f3efa256e}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_account_a0828eb20a2fbfa3455a2e1dc467fe625}{change\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_account_a8775b7c775828ea826e1e1dc5acbe1c1}{change\+Password}} ()
+\item 
+void \mbox{\hyperlink{class_account_a8cbf0a3cbba5da486038e609cba741a4}{delete\+Account}} ()
+\item 
+void \mbox{\hyperlink{class_account_ab5c7a33ac2c23c9a333a8b8242199878}{display\+Self\+Info}} ()
+\item 
+virtual void \mbox{\hyperlink{class_account_a0d19f2c2e53e54733e512ed0c16c08b9}{list\+Streams}} ()
+\item 
+void \mbox{\hyperlink{class_account_af81f40226f7331e29a5e456df4578968}{list\+Users}} ()
+\item 
+void \mbox{\hyperlink{class_account_a0254e5efc18abe5d5e81a5a590533b12}{search\+Parameters}} (std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&streams)
+\item 
+void \mbox{\hyperlink{class_account_a6b83d02a6359d3330d0c53983b3a3761}{leaderboard}} ()
+\item 
+void \mbox{\hyperlink{class_account_a435a8038681f2c21c5319e4a55489777}{display\+Stream\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_account_ae1cb5c39371d064afdbc26c8e2e65b6c}{display\+User\+Info}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_account_ac3e7ab31f9e91585752a0cbbea5c1f34}{sorting\+Methods}} (std\+::vector$<$ T $\ast$ $>$ \&to\+Sort, std\+::vector$<$ std\+::string $>$ \&sort\+Descriptions, std\+::vector$<$ std\+::function$<$ void()$>$$>$ \&sorting\+Methods)
+\item 
+void \mbox{\hyperlink{class_account_a48f6f82240fc514e932e5e1320d58012}{account\+Options}} ()
+\item 
+void \mbox{\hyperlink{class_account_a3d04149ac3d8b56f2014d2bd0c32177a}{top10\+Streams\+Views}} ()
+\item 
+void \mbox{\hyperlink{class_account_afc4d5969613b7e6b4c8f6340ee2348d4}{top10\+Streams\+Likes}} ()
+\item 
+void \mbox{\hyperlink{class_account_a3d580a4279b8e959ee75831da9c2c7bc}{top10\+Oldest\+Users}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_aa2a4960466b02347fc37f0dcff1a41a9}\label{class_account_aa2a4960466b02347fc37f0dcff1a41a9}} 
+\mbox{\hyperlink{class_user}{User}} $\ast$ {\bfseries user}
+\item 
+\mbox{\Hypertarget{class_account_ac6a1b4d86b3cc72c263568253b8e9167}\label{class_account_ac6a1b4d86b3cc72c263568253b8e9167}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\item 
+\mbox{\Hypertarget{class_account_af7e52745690d017e9a224528abaa11ab}\label{class_account_af7e52745690d017e9a224528abaa11ab}} 
+unsigned {\bfseries n\+Options}
+\item 
+\mbox{\Hypertarget{class_account_a48d038083eff97536aefd5fb6e0939cf}\label{class_account_a48d038083eff97536aefd5fb6e0939cf}} 
+std\+::vector$<$ Option $>$ {\bfseries options}
+\item 
+\mbox{\Hypertarget{class_account_a328f2e93d798b7778417ff645aacb01a}\label{class_account_a328f2e93d798b7778417ff645aacb01a}} 
+std\+::unordered\+\_\+map$<$ uint32\+\_\+t, Option\+Check $>$ {\bfseries option\+Checks}
+\item 
+\mbox{\Hypertarget{class_account_ad53cabbffb1b9557ed786e92d8dbb223}\label{class_account_ad53cabbffb1b9557ed786e92d8dbb223}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries option\+Descriptions}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that handles account UI and Input 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_account_a52a50d1f6aa1e2f573c25a4a1e548ff2}\label{class_account_a52a50d1f6aa1e2f573c25a4a1e548ff2}} 
+\index{Account@{Account}!Account@{Account}}
+\index{Account@{Account}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{Account()}{Account()}}
+{\footnotesize\ttfamily Account\+::\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} $\ast$}]{user,  }\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})}
+
+Constructor for abstract \mbox{\hyperlink{class_account}{Account}} Class
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \mbox{\hyperlink{class_user}{User}} Class pointer \\
+\hline
+{\em streamZ} & \mbox{\hyperlink{class_stream_z}{StreamZ}} Class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_account_a48f6f82240fc514e932e5e1320d58012}\label{class_account_a48f6f82240fc514e932e5e1320d58012}} 
+\index{Account@{Account}!accountOptions@{accountOptions}}
+\index{accountOptions@{accountOptions}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{accountOptions()}{accountOptions()}}
+{\footnotesize\ttfamily void Account\+::account\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Displays the account options panel. \mbox{\Hypertarget{class_account_a0828eb20a2fbfa3455a2e1dc467fe625}\label{class_account_a0828eb20a2fbfa3455a2e1dc467fe625}} 
+\index{Account@{Account}!changeName@{changeName}}
+\index{changeName@{changeName}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{changeName()}{changeName()}}
+{\footnotesize\ttfamily void Account\+::change\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prompts the user to change their names. \mbox{\Hypertarget{class_account_a8775b7c775828ea826e1e1dc5acbe1c1}\label{class_account_a8775b7c775828ea826e1e1dc5acbe1c1}} 
+\index{Account@{Account}!changePassword@{changePassword}}
+\index{changePassword@{changePassword}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{changePassword()}{changePassword()}}
+{\footnotesize\ttfamily void Account\+::change\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prompts the user to change their password. \mbox{\Hypertarget{class_account_a8cbf0a3cbba5da486038e609cba741a4}\label{class_account_a8cbf0a3cbba5da486038e609cba741a4}} 
+\index{Account@{Account}!deleteAccount@{deleteAccount}}
+\index{deleteAccount@{deleteAccount}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{deleteAccount()}{deleteAccount()}}
+{\footnotesize\ttfamily void Account\+::delete\+Account (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prompts the user to delete their account. \mbox{\Hypertarget{class_account_ab5c7a33ac2c23c9a333a8b8242199878}\label{class_account_ab5c7a33ac2c23c9a333a8b8242199878}} 
+\index{Account@{Account}!displaySelfInfo@{displaySelfInfo}}
+\index{displaySelfInfo@{displaySelfInfo}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{displaySelfInfo()}{displaySelfInfo()}}
+{\footnotesize\ttfamily void Account\+::display\+Self\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Displays the user\textquotesingle{}s info. \mbox{\Hypertarget{class_account_a435a8038681f2c21c5319e4a55489777}\label{class_account_a435a8038681f2c21c5319e4a55489777}} 
+\index{Account@{Account}!displayStreamInfo@{displayStreamInfo}}
+\index{displayStreamInfo@{displayStreamInfo}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{displayStreamInfo()}{displayStreamInfo()}}
+{\footnotesize\ttfamily void Account\+::display\+Stream\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Displays stream information given an ID. \mbox{\Hypertarget{class_account_ae1cb5c39371d064afdbc26c8e2e65b6c}\label{class_account_ae1cb5c39371d064afdbc26c8e2e65b6c}} 
+\index{Account@{Account}!displayUserInfo@{displayUserInfo}}
+\index{displayUserInfo@{displayUserInfo}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{displayUserInfo()}{displayUserInfo()}}
+{\footnotesize\ttfamily void Account\+::display\+User\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Displays user information given a nickname. \mbox{\Hypertarget{class_account_a6b83d02a6359d3330d0c53983b3a3761}\label{class_account_a6b83d02a6359d3330d0c53983b3a3761}} 
+\index{Account@{Account}!leaderboard@{leaderboard}}
+\index{leaderboard@{leaderboard}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{leaderboard()}{leaderboard()}}
+{\footnotesize\ttfamily void Account\+::leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Displays the leaderboard panel. \mbox{\Hypertarget{class_account_a0d19f2c2e53e54733e512ed0c16c08b9}\label{class_account_a0d19f2c2e53e54733e512ed0c16c08b9}} 
+\index{Account@{Account}!listStreams@{listStreams}}
+\index{listStreams@{listStreams}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{listStreams()}{listStreams()}}
+{\footnotesize\ttfamily void Account\+::list\+Streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Searches for current streams for their title/genre/language and prompts the user (if viewer) to join them. \mbox{\Hypertarget{class_account_af81f40226f7331e29a5e456df4578968}\label{class_account_af81f40226f7331e29a5e456df4578968}} 
+\index{Account@{Account}!listUsers@{listUsers}}
+\index{listUsers@{listUsers}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{listUsers()}{listUsers()}}
+{\footnotesize\ttfamily void Account\+::list\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Searches for users (with their display name) and lists them. \mbox{\Hypertarget{class_account_a8a5be6d00ef80f29776ec45f3efa256e}\label{class_account_a8a5be6d00ef80f29776ec45f3efa256e}} 
+\index{Account@{Account}!run@{run}}
+\index{run@{run}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Account\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that displays account specific options \mbox{\Hypertarget{class_account_a0254e5efc18abe5d5e81a5a590533b12}\label{class_account_a0254e5efc18abe5d5e81a5a590533b12}} 
+\index{Account@{Account}!searchParameters@{searchParameters}}
+\index{searchParameters@{searchParameters}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{searchParameters()}{searchParameters()}}
+{\footnotesize\ttfamily void Account\+::search\+Parameters (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_live_stream}{Live\+Stream}} $\ast$ $>$ \&}]{streams }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prompts the user for parameters to search for a live stream and returns a vector 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em streams} & A variable where the resulting search gets put \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_ac3e7ab31f9e91585752a0cbbea5c1f34}\label{class_account_ac3e7ab31f9e91585752a0cbbea5c1f34}} 
+\index{Account@{Account}!sortingMethods@{sortingMethods}}
+\index{sortingMethods@{sortingMethods}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{sortingMethods()}{sortingMethods()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Account\+::sorting\+Methods (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $\ast$ $>$ \&}]{to\+Sort,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{sort\+Descriptions,  }\item[{std\+::vector$<$ std\+::function$<$ void()$>$$>$ \&}]{sorting\+Methods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prompts the user to sort a list.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type in the vector \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Sort} & the vector to sort, passed by reference \\
+\hline
+{\em sort\+Descriptions} & descriptions to be printed (M\+U\+ST BE S\+A\+ME S\+I\+ZE AS S\+O\+R\+T\+I\+NG M\+E\+T\+H\+O\+DS) \\
+\hline
+{\em sorting\+Methods} & the functions that sort the vector (M\+U\+ST BE S\+A\+ME S\+I\+ZE AS S\+O\+RT D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+NS) \\
+\hline
+{\em reversed} & reverses the output if true. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_a3d580a4279b8e959ee75831da9c2c7bc}\label{class_account_a3d580a4279b8e959ee75831da9c2c7bc}} 
+\index{Account@{Account}!top10OldestUsers@{top10OldestUsers}}
+\index{top10OldestUsers@{top10OldestUsers}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{top10OldestUsers()}{top10OldestUsers()}}
+{\footnotesize\ttfamily void Account\+::top10\+Oldest\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lists the top 10 oldest viewers \mbox{\Hypertarget{class_account_afc4d5969613b7e6b4c8f6340ee2348d4}\label{class_account_afc4d5969613b7e6b4c8f6340ee2348d4}} 
+\index{Account@{Account}!top10StreamsLikes@{top10StreamsLikes}}
+\index{top10StreamsLikes@{top10StreamsLikes}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{top10StreamsLikes()}{top10StreamsLikes()}}
+{\footnotesize\ttfamily void Account\+::top10\+Streams\+Likes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lists the top 10 streams by likes \mbox{\Hypertarget{class_account_a3d04149ac3d8b56f2014d2bd0c32177a}\label{class_account_a3d04149ac3d8b56f2014d2bd0c32177a}} 
+\index{Account@{Account}!top10StreamsViews@{top10StreamsViews}}
+\index{top10StreamsViews@{top10StreamsViews}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{top10StreamsViews()}{top10StreamsViews()}}
+{\footnotesize\ttfamily void Account\+::top10\+Streams\+Views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lists the top 10 streams by views 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Account.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/\+Accounts/Account.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{class_stream_manager}{}\doxysection{Stream\+Manager Class Reference}
+\label{class_stream_manager}\index{StreamManager@{StreamManager}}
+
+
+{\ttfamily \#include $<$Stream\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stream_manager_af826c2c6784a2833ed4cc3760f3fe8a6}{Stream\+Manager}} (\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$streamZ)
+\item 
+ID \mbox{\hyperlink{class_stream_manager_a48259477530cb9bd6c3683db0ff78515}{create\+Public\+Stream}} (std\+::string name, std\+::string streamer\+Nick, language stream\+Language, genre stream\+Genre, unsigned min\+Age=V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE) const
+\item 
+ID \mbox{\hyperlink{class_stream_manager_aef48f2798a97814b7472e23d1fc46172}{create\+Private\+Stream}} (std\+::string name, std\+::string streamer\+Nick, language stream\+Language, genre stream\+Genre, int max\+Users, unsigned min\+Age=V\+I\+E\+W\+E\+R\+\_\+\+M\+I\+N\+\_\+\+A\+GE) const
+\item 
+void \mbox{\hyperlink{class_stream_manager_a6dda831fcfcfef3ee5e0222c36c6ba4a}{remove\+Stream}} (ID stream\+ID) const
+\item 
+void \mbox{\hyperlink{class_stream_manager_ad00a848f8afd383d24110ab0262d327c}{remove\+Viewer\+From\+Whitelists}} (std\+::string nick) const
+\item 
+void \mbox{\hyperlink{class_stream_manager_ac60ba9403a32bab65e75a17593cbf840}{remove\+Stream\+By\+Streamer}} (std\+::string streamer\+Nick) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stream_manager_a76582e3bf3610bbe3df19e365d424c68}\label{class_stream_manager_a76582e3bf3610bbe3df19e365d424c68}} 
+\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$ {\bfseries streamZ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to manage streams, like creating and removing streams 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stream_manager_af826c2c6784a2833ed4cc3760f3fe8a6}\label{class_stream_manager_af826c2c6784a2833ed4cc3760f3fe8a6}} 
+\index{StreamManager@{StreamManager}!StreamManager@{StreamManager}}
+\index{StreamManager@{StreamManager}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{StreamManager()}{StreamManager()}}
+{\footnotesize\ttfamily Stream\+Manager\+::\+Stream\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stream_z}{StreamZ}} $\ast$}]{streamZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. \mbox{\hyperlink{class_stream_z}{StreamZ}} needs to use to access the database and other methods 
+\begin{DoxyParams}{Parameters}
+{\em streamZ} & -\/ Main class pointer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stream_manager_aef48f2798a97814b7472e23d1fc46172}\label{class_stream_manager_aef48f2798a97814b7472e23d1fc46172}} 
+\index{StreamManager@{StreamManager}!createPrivateStream@{createPrivateStream}}
+\index{createPrivateStream@{createPrivateStream}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{createPrivateStream()}{createPrivateStream()}}
+{\footnotesize\ttfamily ID Stream\+Manager\+::create\+Private\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{streamer\+Nick,  }\item[{language}]{stream\+Language,  }\item[{genre}]{stream\+Genre,  }\item[{int}]{max\+Users,  }\item[{unsigned}]{min\+Age = {\ttfamily VIEWER\+\_\+MIN\+\_\+AGE} }\end{DoxyParamCaption}) const}
+
+Function to create a public streamer 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Desired name of the new streamer \\
+\hline
+{\em stream\+Language} & -\/ \mbox{\hyperlink{class_stream}{Stream}} language \\
+\hline
+{\em stream\+Genre} & -\/ \mbox{\hyperlink{class_stream}{Stream}} genre \\
+\hline
+{\em min\+Age} & -\/ Minimum age for a viewer to join \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_manager_a48259477530cb9bd6c3683db0ff78515}\label{class_stream_manager_a48259477530cb9bd6c3683db0ff78515}} 
+\index{StreamManager@{StreamManager}!createPublicStream@{createPublicStream}}
+\index{createPublicStream@{createPublicStream}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{createPublicStream()}{createPublicStream()}}
+{\footnotesize\ttfamily ID Stream\+Manager\+::create\+Public\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{streamer\+Nick,  }\item[{language}]{stream\+Language,  }\item[{genre}]{stream\+Genre,  }\item[{unsigned}]{min\+Age = {\ttfamily VIEWER\+\_\+MIN\+\_\+AGE} }\end{DoxyParamCaption}) const}
+
+Function to create a public streamer 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Desired name of the new streamer \\
+\hline
+{\em stream\+Language} & -\/ \mbox{\hyperlink{class_stream}{Stream}} language \\
+\hline
+{\em stream\+Genre} & -\/ \mbox{\hyperlink{class_stream}{Stream}} genre \\
+\hline
+{\em min\+Age} & -\/ Minimum age for a viewer to join \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_manager_a6dda831fcfcfef3ee5e0222c36c6ba4a}\label{class_stream_manager_a6dda831fcfcfef3ee5e0222c36c6ba4a}} 
+\index{StreamManager@{StreamManager}!removeStream@{removeStream}}
+\index{removeStream@{removeStream}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{removeStream()}{removeStream()}}
+{\footnotesize\ttfamily void Stream\+Manager\+::remove\+Stream (\begin{DoxyParamCaption}\item[{ID}]{stream\+ID }\end{DoxyParamCaption}) const}
+
+Removes a streamer from the system 
+\begin{DoxyExceptions}{Exceptions}
+{\em Doest\+Not\+Exist} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+ID} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_manager_ac60ba9403a32bab65e75a17593cbf840}\label{class_stream_manager_ac60ba9403a32bab65e75a17593cbf840}} 
+\index{StreamManager@{StreamManager}!removeStreamByStreamer@{removeStreamByStreamer}}
+\index{removeStreamByStreamer@{removeStreamByStreamer}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{removeStreamByStreamer()}{removeStreamByStreamer()}}
+{\footnotesize\ttfamily void Stream\+Manager\+::remove\+Stream\+By\+Streamer (\begin{DoxyParamCaption}\item[{std\+::string}]{streamer\+Nick }\end{DoxyParamCaption}) const}
+
+Deletes all of the streams from a specified streamer from the database and from history of viewers Used when deleting a streamer 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_does_not_exist}{Does\+Not\+Exist}}} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em streamer\+Nick} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stream_manager_ad00a848f8afd383d24110ab0262d327c}\label{class_stream_manager_ad00a848f8afd383d24110ab0262d327c}} 
+\index{StreamManager@{StreamManager}!removeViewerFromWhitelists@{removeViewerFromWhitelists}}
+\index{removeViewerFromWhitelists@{removeViewerFromWhitelists}!StreamManager@{StreamManager}}
+\doxysubsubsection{\texorpdfstring{removeViewerFromWhitelists()}{removeViewerFromWhitelists()}}
+{\footnotesize\ttfamily void Stream\+Manager\+::remove\+Viewer\+From\+Whitelists (\begin{DoxyParamCaption}\item[{std\+::string}]{nick }\end{DoxyParamCaption}) const}
+
+Used when deleting a viewers 
+\begin{DoxyParams}{Parameters}
+{\em nick} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Stream\+Manager.\+h\item 
+C\+:/\+Users/adbp/\+Documents/\+Git\+Hub/\+F\+E\+U\+P-\/\+A\+E\+D\+A-\/proj1/src/managers/Stream\+Manager.\+cpp\end{DoxyCompactItemize}
